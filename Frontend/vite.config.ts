@@ -16,4 +16,16 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  // Ensure environment variables are properly loaded
+  envPrefix: 'VITE_',
+  define: {
+    // Force define API URL for production builds
+    __HOSPITAL_API_URL__: JSON.stringify(process.env.VITE_API_URL || 'https://hospital-backend-zvjt.onrender.com/api'),
+  },
+  build: {
+    // Ensure environment variables are included in build
+    rollupOptions: {
+      external: [],
+    },
+  },
 })
