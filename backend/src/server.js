@@ -37,8 +37,11 @@ const corsOptions = {
     const allowedOrigins = [
       'http://localhost:3000',
       'http://localhost:5173', 
-      'http://localhost:5174',  // Added for Vite dev server
+      'http://localhost:5174',  // Vite dev server
       'http://localhost:3001',
+      'https://hospital-management-system-aayushmishra321s-projects.vercel.app', // Your Vercel domain
+      'https://hospital-management-system-git-main-aayushmishra321s-projects.vercel.app', // Vercel git domain
+      'https://hospital-management-system-zvjt.vercel.app', // Vercel production domain
       process.env.CORS_ORIGIN,
       process.env.FRONTEND_URL
     ].filter(Boolean);
@@ -69,6 +72,45 @@ app.get('/api/health', (req, res) => {
     status: 'OK', 
     timestamp: new Date().toISOString(),
     environment: process.env.NODE_ENV || 'development'
+  });
+});
+
+// Root endpoint
+app.get('/', (req, res) => {
+  res.json({
+    message: 'Hospital Management System API',
+    status: 'Running',
+    version: '1.0.0',
+    endpoints: {
+      health: '/api/health',
+      auth: '/api/auth',
+      users: '/api/user',
+      doctors: '/api/doctor',
+      patients: '/api/patient',
+      appointments: '/api/appointments',
+      billing: '/api/billing',
+      payments: '/api/payments'
+    }
+  });
+});
+
+// API root endpoint
+app.get('/api', (req, res) => {
+  res.json({
+    message: 'Hospital Management System API',
+    status: 'Running',
+    version: '1.0.0',
+    documentation: 'Available endpoints listed below',
+    endpoints: [
+      'GET /api/health - Health check',
+      'POST /api/auth/login - User login',
+      'POST /api/auth/register - User registration',
+      'GET /api/user/profile - User profile',
+      'GET /api/doctor/appointments - Doctor appointments',
+      'GET /api/patient/appointments - Patient appointments',
+      'POST /api/billing/create - Create bill',
+      'POST /api/payments/create-payment-intent - Create payment'
+    ]
   });
 });
 

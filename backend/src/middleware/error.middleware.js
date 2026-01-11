@@ -1,5 +1,12 @@
+// 404 handler - must come before error handler
+const notFound = (req, res, next) => {
+  const error = new Error(`Not found - ${req.originalUrl}`);
+  error.statusCode = 404;
+  next(error);
+};
+
 // Global error handling middleware
-exports.errorHandler = (err, req, res, next) => {
+const errorHandler = (err, req, res, next) => {
   console.error('Error:', err);
 
   // Mongoose validation error
@@ -46,14 +53,13 @@ exports.errorHandler = (err, req, res, next) => {
   });
 };
 
-// 404 handler
-exports.notFound = (req, res, next) => {
-  const error = new Error(`Not found - ${req.originalUrl}`);
-  error.statusCode = 404;
-  next(error);
+// Async error wrapper
+const asyncHandler = (fn) => (req, res, next) => {
+  Promise.resolve(fn(req, res, next)).catch(next);
 };
 
-// Async error wrapper
-exports.asyncHandler = (fn) => (req, res, next) => {
-  Promise.resolve(fn(req, res, next)).catch(next);
+module.exports = {
+  errorHandler,
+  notFound,
+  asyncHandler
 };
