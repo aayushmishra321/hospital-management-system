@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Calendar, Clock, Plus, X, Save, AlertCircle, CheckCircle } from 'lucide-react';
 import { toast } from 'sonner';
+import api from '../../services/api';
 
 interface TimeSlot {
   startTime: string;
@@ -93,24 +94,18 @@ export function DoctorSchedule() {
       if (!doctorId) {
         // If doctorId is not in user object, fetch it from the doctor endpoint
         try {
-          const doctorResponse = await fetch('http://localhost:5001/api/doctor/profile', {
+          const doctorResponse = await api.get('/doctor/profile', {
             headers: {
               'Authorization': `Bearer ${token}`,
               'Content-Type': 'application/json'
             }
           });
           
-          if (doctorResponse.ok) {
-            const doctorData = await doctorResponse.json();
-            doctorId = doctorData._id;
-            
-            // Update localStorage with doctorId for future use
-            const updatedUser = { ...user, doctorId };
-            localStorage.setItem('user', JSON.stringify(updatedUser));
-          } else {
-            const errorData = await doctorResponse.json();
-            throw new Error(errorData.message || 'Could not find doctor profile');
-          }
+          doctorId = doctorResponse.data._id;
+          
+          // Update localStorage with doctorId for future use
+          const updatedUser = { ...user, doctorId };
+          localStorage.setItem('user', JSON.stringify(updatedUser));
         } catch (profileError) {
           console.error('Error fetching doctor profile:', profileError);
           toast.error('Could not load doctor profile. Please contact support.');
@@ -123,22 +118,15 @@ export function DoctorSchedule() {
         return;
       }
 
-      const response = await fetch(`http://localhost:5001/api/schedule/doctor/${doctorId}`, {
+      const response = await api.get(`/schedule/doctor/${doctorId}`, {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
         }
       });
 
-      if (response.ok) {
-        const data = await response.json();
-        setSchedule(data);
-        toast.success('Schedule loaded successfully');
-      } else {
-        const errorData = await response.json();
-        console.error('Schedule fetch error:', errorData);
-        toast.error(errorData.message || 'Failed to load schedule');
-      }
+      setSchedule(response.data);
+      toast.success('Schedule loaded successfully');
     } catch (error) {
       console.error('Error fetching schedule:', error);
       toast.error('Network error. Please check your connection and try again.');
