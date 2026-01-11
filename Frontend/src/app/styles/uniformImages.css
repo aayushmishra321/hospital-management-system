@@ -1,0 +1,239 @@
+/* Uniform Image Display CSS Fix */
+/* Apply this to any existing card components for consistent image display */
+
+/* Base uniform image container */
+.uniform-image-fix {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Ensure all images fit uniformly regardless of aspect ratio */
+.uniform-image-fix img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Fixed height containers for different card sizes */
+.image-height-xs { height: 6rem !important; }      /* 96px */
+.image-height-sm { height: 8rem !important; }      /* 128px */
+.image-height-md { height: 12rem !important; }     /* 192px - Default card height */
+.image-height-lg { height: 16rem !important; }     /* 256px */
+.image-height-xl { height: 20rem !important; }     /* 320px */
+.image-height-2xl { height: 24rem !important; }    /* 384px */
+
+/* Aspect ratio based containers (responsive) */
+.image-aspect-square { 
+  aspect-ratio: 1 / 1; 
+  height: auto !important; 
+}
+
+.image-aspect-portrait { 
+  aspect-ratio: 3 / 4; 
+  height: auto !important; 
+}
+
+.image-aspect-landscape { 
+  aspect-ratio: 4 / 3; 
+  height: auto !important; 
+}
+
+.image-aspect-wide { 
+  aspect-ratio: 16 / 9; 
+  height: auto !important; 
+}
+
+/* Apply to existing service cards */
+.service-card-image,
+.department-card-image,
+.doctor-card-image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 12rem;
+}
+
+.service-card-image img,
+.department-card-image img,
+.doctor-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+/* Apply to profile images */
+.profile-image-fix {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: inherit;
+}
+
+/* Hover effects that work with object-fit: cover */
+.image-hover-scale:hover img {
+  transform: scale(1.05);
+}
+
+.image-hover-scale-up:hover img {
+  transform: scale(1.1);
+}
+
+.image-hover-zoom:hover img {
+  transform: scale(1.15);
+}
+
+/* Fix for existing card structures */
+.card-image-container {
+  position: relative;
+  overflow: hidden;
+  height: 12rem; /* 192px default */
+  width: 100%;
+}
+
+.card-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+/* Responsive image heights */
+@media (max-width: 640px) {
+  .image-height-responsive {
+    height: 8rem !important; /* Smaller on mobile */
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .image-height-responsive {
+    height: 10rem !important; /* Medium on tablet */
+  }
+}
+
+@media (min-width: 1025px) {
+  .image-height-responsive {
+    height: 12rem !important; /* Full size on desktop */
+  }
+}
+
+/* Quick fix classes to apply to existing elements */
+.fix-image-container {
+  position: relative !important;
+  overflow: hidden !important;
+  height: 12rem !important;
+}
+
+.fix-image {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+/* Loading state for images */
+.image-loading-state {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Error state for broken images */
+.image-error-state {
+  background-color: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  font-size: 2rem;
+}
+
+.image-error-state::before {
+  content: "🖼️";
+}
+
+/* Overlay improvements */
+.image-overlay-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  transition: opacity 0.3s ease;
+}
+
+.image-overlay-hover {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-overlay-hover:hover {
+  opacity: 1;
+}
+
+/* Icon positioning in image cards */
+.image-icon-overlay {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 10;
+}
+
+.image-icon-overlay-right {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+}
+
+/* Text overlay positioning */
+.image-text-overlay {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  z-index: 10;
+  color: white;
+}
+
+/* Utility classes for common image fixes */
+.img-cover { object-fit: cover !important; }
+.img-contain { object-fit: contain !important; }
+.img-center { object-position: center !important; }
+.img-top { object-position: top !important; }
+.img-bottom { object-position: bottom !important; }
+
+/* Print-friendly styles */
+@media print {
+  .uniform-image-fix img {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .image-overlay-gradient {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .uniform-image-fix img,
+  .image-hover-scale img,
+  .image-hover-scale-up img,
+  .image-hover-zoom img {
+    transition: none !important;
+  }
+}

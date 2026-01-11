@@ -1,0 +1,2048 @@
+/* CARD CONTENT VISIBILITY FIX - MINIMALISTIC */
+/* Clean, modern design without heavy text shadows */
+
+/* Clean high contrast text for all card content */
+.healthcare-glass-card *,
+.healthcare-service-card *,
+.healthcare-glass-hero *,
+.healthcare-glass-overlay *,
+.healthcare-glass-section *,
+.healthcare-form * {
+  color: rgba(31, 41, 55, 1) !important;
+  text-shadow: none !important;
+}
+
+/* Exception for white text that should remain white - clean style */
+.text-white,
+.text-white *,
+footer .text-white,
+footer .text-white * {
+  color: rgba(255, 255, 255, 1) !important;
+  text-shadow: none !important;
+}
+
+/* Exception for colored text that should maintain their colors - clean style */
+.text-teal-600,
+.text-teal-700,
+.text-blue-600,
+.text-blue-700,
+.text-green-500,
+.text-green-600,
+.text-red-600,
+.text-red-700,
+.text-red-800 {
+  text-shadow: none !important;
+  font-weight: 600 !important;
+}
+
+/* Force visibility for headings - clean minimalistic style */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700 !important;
+}
+
+.healthcare-glass-card h1,
+.healthcare-glass-card h2,
+.healthcare-glass-card h3,
+.healthcare-glass-card h4,
+.healthcare-glass-card h5,
+.healthcare-glass-card h6,
+.healthcare-service-card h1,
+.healthcare-service-card h2,
+.healthcare-service-card h3,
+.healthcare-service-card h4,
+.healthcare-service-card h5,
+.healthcare-service-card h6,
+.healthcare-glass-hero h1,
+.healthcare-glass-hero h2,
+.healthcare-glass-hero h3,
+.healthcare-glass-hero h4,
+.healthcare-glass-hero h5,
+.healthcare-glass-hero h6,
+.healthcare-glass-overlay h1,
+.healthcare-glass-overlay h2,
+.healthcare-glass-overlay h3,
+.healthcare-glass-overlay h4,
+.healthcare-glass-overlay h5,
+.healthcare-glass-overlay h6 {
+  color: rgba(17, 24, 39, 1) !important;
+  text-shadow: none !important;
+  font-weight: 700 !important;
+}
+
+/* Force visibility for paragraphs - clean style */
+.healthcare-glass-card p,
+.healthcare-service-card p,
+.healthcare-glass-hero p,
+.healthcare-glass-overlay p {
+  color: rgba(55, 65, 81, 1) !important;
+  text-shadow: none !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+}
+
+/* Force visibility for spans and divs - clean style */
+.healthcare-glass-card span,
+.healthcare-glass-card div,
+.healthcare-service-card span,
+.healthcare-service-card div,
+.healthcare-glass-hero span,
+.healthcare-glass-hero div,
+.healthcare-glass-overlay span,
+.healthcare-glass-overlay div {
+  color: rgba(55, 65, 81, 1) !important;
+  text-shadow: none !important;
+}
+
+/* Force visibility for links - clean style */
+.healthcare-glass-card a,
+.healthcare-service-card a,
+.healthcare-glass-hero a,
+.healthcare-glass-overlay a {
+  color: rgba(22, 160, 133, 1) !important;
+  text-shadow: none !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+}
+
+.healthcare-glass-card a:hover,
+.healthcare-service-card a:hover,
+.healthcare-glass-hero a:hover,
+.healthcare-glass-overlay a:hover {
+  color: rgba(19, 78, 74, 1) !important;
+  text-decoration: underline !important;
+}
+
+/* Force visibility for buttons */
+.healthcare-glass-card button,
+.healthcare-service-card button,
+.healthcare-glass-hero button,
+.healthcare-glass-overlay button {
+  background: rgba(22, 160, 133, 0.9) !important;
+  color: white !important;
+  border: 1px solid rgba(22, 160, 133, 1) !important;
+  text-shadow: none !important;
+  font-weight: 600 !important;
+  padding: 8px 16px !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+}
+
+.healthcare-glass-card button:hover,
+.healthcare-service-card button:hover,
+.healthcare-glass-hero button:hover,
+.healthcare-glass-overlay button:hover {
+  background: rgba(22, 160, 133, 1) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(22, 160, 133, 0.3) !important;
+}
+
+/* Force visibility for form elements - clean style */
+.healthcare-form label {
+  color: rgba(17, 24, 39, 1) !important;
+  text-shadow: none !important;
+  font-weight: 600 !important;
+  margin-bottom: 8px !important;
+  display: block !important;
+}
+
+.healthcare-form input,
+.healthcare-form textarea,
+.healthcare-form select {
+  color: rgba(31, 41, 55, 1) !important;
+  font-weight: 500 !important;
+  background: rgba(255, 255, 255, 0.4) !important;
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+}
+
+.healthcare-form input::placeholder,
+.healthcare-form textarea::placeholder {
+  color: rgba(107, 114, 128, 0.8) !important;
+  font-weight: 400 !important;
+}
+
+/* Force visibility for lists - clean style */
+.healthcare-glass-card ul,
+.healthcare-glass-card ol,
+.healthcare-service-card ul,
+.healthcare-service-card ol,
+.healthcare-glass-hero ul,
+.healthcare-glass-hero ol,
+.healthcare-glass-overlay ul,
+.healthcare-glass-overlay ol {
+  color: rgba(55, 65, 81, 1) !important;
+}
+
+.healthcare-glass-card li,
+.healthcare-service-card li,
+.healthcare-glass-hero li,
+.healthcare-glass-overlay li {
+  color: rgba(55, 65, 81, 1) !important;
+  text-shadow: none !important;
+  font-weight: 400 !important;
+  margin-bottom: 4px !important;
+}
+
+/* Force visibility for icons - clean style */
+.healthcare-glass-card svg,
+.healthcare-service-card svg,
+.healthcare-glass-hero svg,
+.healthcare-glass-overlay svg {
+  filter: none !important;
+}
+
+/* Force visibility for small text - clean style */
+.text-sm {
+  font-weight: 400 !important;
+}
+
+.healthcare-glass-card .text-sm,
+.healthcare-service-card .text-sm,
+.healthcare-glass-hero .text-sm,
+.healthcare-glass-overlay .text-sm {
+  color: rgba(75, 85, 99, 1) !important;
+  text-shadow: none !important;
+  font-weight: 400 !important;
+}
+
+/* Force visibility for large text - clean style */
+.text-xl,
+.text-2xl,
+.text-3xl,
+.text-4xl,
+.text-5xl {
+  font-weight: 700 !important;
+}
+
+.healthcare-glass-card .text-xl,
+.healthcare-glass-card .text-2xl,
+.healthcare-glass-card .text-3xl,
+.healthcare-glass-card .text-4xl,
+.healthcare-glass-card .text-5xl,
+.healthcare-service-card .text-xl,
+.healthcare-service-card .text-2xl,
+.healthcare-service-card .text-3xl,
+.healthcare-service-card .text-4xl,
+.healthcare-service-card .text-5xl,
+.healthcare-glass-hero .text-xl,
+.healthcare-glass-hero .text-2xl,
+.healthcare-glass-hero .text-3xl,
+.healthcare-glass-hero .text-4xl,
+.healthcare-glass-hero .text-5xl,
+.healthcare-glass-overlay .text-xl,
+.healthcare-glass-overlay .text-2xl,
+.healthcare-glass-overlay .text-3xl,
+.healthcare-glass-overlay .text-4xl,
+.healthcare-glass-overlay .text-5xl {
+  color: rgba(17, 24, 39, 1) !important;
+  text-shadow: none !important;
+  font-weight: 700 !important;
+}
+
+/* Force visibility for navigation - clean style */
+.healthcare-nav-link {
+  color: rgba(17, 24, 39, 1) !important;
+  text-shadow: none !important;
+  font-weight: 600 !important;
+}
+
+/* Force visibility for breadcrumbs - clean style */
+.healthcare-body {
+  color: rgba(55, 65, 81, 1) !important;
+  text-shadow: none !important;
+  font-weight: 400 !important;
+}
+
+/* Mobile responsiveness - clean style */
+@media (max-width: 768px) {
+  .healthcare-glass-card,
+  .healthcare-service-card,
+  .healthcare-glass-hero,
+  .healthcare-glass-overlay {
+    background: rgba(255, 255, 255, 0.5) !important;
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+  }
+  
+  .healthcare-glass-card *,
+  .healthcare-service-card *,
+  .healthcare-glass-hero *,
+  .healthcare-glass-overlay * {
+    text-shadow: none !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .healthcare-glass-card,
+  .healthcare-service-card,
+  .healthcare-glass-hero,
+  .healthcare-glass-overlay {
+    background: rgba(255, 255, 255, 0.9) !important;
+    border: 2px solid rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  .healthcare-glass-card *,
+  .healthcare-service-card *,
+  .healthcare-glass-hero *,
+  .healthcare-glass-overlay * {
+    color: rgba(0, 0, 0, 1) !important;
+    text-shadow: none !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  .healthcare-glass-card,
+  .healthcare-service-card,
+  .healthcare-glass-hero,
+  .healthcare-glass-overlay {
+    background: white !important;
+    border: 1px solid #ccc !important;
+    box-shadow: none !important;
+  }
+  
+  .healthcare-glass-card *,
+  .healthcare-service-card *,
+  .healthcare-glass-hero *,
+  .healthcare-glass-overlay * {
+    color: black !important;
+    text-shadow: none !important;
+  }
+}
+
+/* FOOTER TEXT - ALL WHITE - ONLY FOR HEALTHCARE PAGES */
+.healthcare-mountain-bg footer * {
+  color: rgba(255, 255, 255, 1) !important;
+  text-shadow: none !important;
+}
+
+.healthcare-mountain-bg footer h1, 
+.healthcare-mountain-bg footer h2, 
+.healthcare-mountain-bg footer h3, 
+.healthcare-mountain-bg footer h4, 
+.healthcare-mountain-bg footer h5, 
+.healthcare-mountain-bg footer h6 {
+  color: rgba(255, 255, 255, 1) !important;
+  font-weight: 700 !important;
+}
+
+.healthcare-mountain-bg footer .text-white,
+.healthcare-mountain-bg footer .text-gray-300,
+.healthcare-mountain-bg footer .text-gray-400,
+.healthcare-mountain-bg footer .text-teal-400 {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.healthcare-mountain-bg footer a {
+  color: rgba(255, 255, 255, 0.9) !important;
+  transition: color 0.3s ease !important;
+}
+
+.healthcare-mountain-bg footer a:hover {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+/* LOGIN/REGISTER PAGE INPUT FIXES - BLACK TEXT WITH PROPER ICON SPACING */
+/* Ensure proper input styling and icon positioning with gaps */
+
+/* PERFECT ICON POSITIONING - NO OVERLAP, PROPER SPACING */
+
+/* Left icons (Mail, Lock, User, Phone, etc.) - Inside input with proper spacing */
+.relative .absolute.left-3 {
+  left: 12px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 10;
+  pointer-events: none;
+  color: rgba(55, 65, 81, 0.8) !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+/* Right icons (Eye, EyeOff) - Inside input with proper spacing and clear touch target */
+.relative .absolute.right-3 {
+  right: 12px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 10;
+  cursor: pointer;
+  color: rgba(55, 65, 81, 0.8) !important;
+  width: 20px !important;
+  height: 20px !important;
+  padding: 2px !important;
+  border-radius: 4px !important;
+  transition: all 0.2s ease !important;
+}
+
+/* Hover effect for right icons (password visibility toggle) */
+.relative .absolute.right-3:hover {
+  background: rgba(55, 65, 81, 0.1) !important;
+  color: rgba(55, 65, 81, 1) !important;
+}
+
+/* Proper padding for inputs with left icons - more space for icon */
+.healthcare-input.pl-10 {
+  padding-left: 44px !important;
+}
+
+/* Proper padding for inputs with right icons - more space for icon and touch target */
+.healthcare-input.pr-12 {
+  padding-right: 48px !important;
+}
+
+/* Login/Register specific input styling - BLACK TEXT ON WHITE BACKGROUND */
+.healthcare-input.text-white,
+.healthcare-input {
+  color: rgba(31, 41, 55, 1) !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  border: 1px solid rgba(209, 213, 219, 1) !important;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
+
+.healthcare-input.text-white::placeholder,
+.healthcare-input::placeholder {
+  color: rgba(107, 114, 128, 0.7) !important;
+}
+
+.healthcare-input.text-white:focus,
+.healthcare-input:focus {
+  background: rgba(255, 255, 255, 1) !important;
+  border-color: rgba(22, 160, 133, 1) !important;
+  box-shadow: 0 0 0 3px rgba(22, 160, 133, 0.1) !important;
+  color: rgba(31, 41, 55, 1) !important;
+}
+
+/* FORCE ALL INPUT ICONS TO BE DARK AND VISIBLE */
+.healthcare-input + .absolute svg,
+.healthcare-input ~ .absolute svg,
+.relative .absolute svg,
+input + .absolute svg,
+input ~ .absolute svg,
+.w-5.h-5,
+.text-white\/60 {
+  color: rgba(55, 65, 81, 0.8) !important;
+  fill: rgba(55, 65, 81, 0.8) !important;
+  stroke: rgba(55, 65, 81, 0.8) !important;
+}
+
+/* FORCE SPECIFIC ICON CLASSES TO BE DARK */
+.text-white\/60,
+.placeholder-white\/60 {
+  color: rgba(55, 65, 81, 0.8) !important;
+}
+
+.placeholder-white\/60::placeholder {
+  color: rgba(107, 114, 128, 0.7) !important;
+}
+
+/* Fix button text visibility in login/register */
+.healthcare-btn-premium {
+  color: rgba(255, 255, 255, 1) !important;
+  background: linear-gradient(135deg, #16a085, #138d75) !important;
+  border: none !important;
+}
+
+.healthcare-btn-premium:hover {
+  background: linear-gradient(135deg, #138d75, #117a65) !important;
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+/* FORCE ALL LABEL TEXT TO BE WHITE IN LOGIN/REGISTER */
+.healthcare-text-enhanced,
+.text-white\/90,
+label {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* FORCE ALL FORM ICONS TO BE DARK - NUCLEAR OPTION */
+form svg,
+form .w-5,
+form .h-5,
+form .w-4,
+form .h-4,
+form .w-3,
+form .h-3,
+.healthcare-glass-hero svg,
+.healthcare-glass-hero .w-5,
+.healthcare-glass-hero .h-5 {
+  color: rgba(55, 65, 81, 0.8) !important;
+  fill: rgba(55, 65, 81, 0.8) !important;
+  stroke: rgba(55, 65, 81, 0.8) !important;
+}
+
+/* COMPREHENSIVE FOOTER TEXT VISIBILITY FIX - ONLY FOR HEALTHCARE PAGES */
+/* This is a comprehensive fix to ensure ALL footer text is visible on healthcare pages */
+
+/* ULTIMATE FOOTER FIX - MAXIMUM SPECIFICITY - ONLY FOR HEALTHCARE PAGES */
+.healthcare-mountain-bg footer,
+.healthcare-mountain-bg footer *,
+.healthcare-mountain-bg footer div,
+.healthcare-mountain-bg footer p,
+.healthcare-mountain-bg footer span,
+.healthcare-mountain-bg footer a,
+.healthcare-mountain-bg footer h1,
+.healthcare-mountain-bg footer h2,
+.healthcare-mountain-bg footer h3,
+.healthcare-mountain-bg footer h4,
+.healthcare-mountain-bg footer h5,
+.healthcare-mountain-bg footer h6,
+.healthcare-mountain-bg footer li,
+.healthcare-mountain-bg footer ul,
+.healthcare-mountain-bg footer ol,
+.healthcare-mountain-bg footer strong,
+.healthcare-mountain-bg footer em,
+.healthcare-mountain-bg footer small,
+.healthcare-mountain-bg footer .text-white,
+.healthcare-mountain-bg footer .text-gray-300,
+.healthcare-mountain-bg footer .text-gray-400,
+.healthcare-mountain-bg footer .text-gray-500,
+.healthcare-mountain-bg footer .text-gray-600,
+.healthcare-mountain-bg footer .text-gray-700,
+.healthcare-mountain-bg footer .text-gray-800,
+.healthcare-mountain-bg footer .text-gray-900,
+.healthcare-mountain-bg footer .text-slate-300,
+.healthcare-mountain-bg footer .text-slate-400,
+.healthcare-mountain-bg footer .text-slate-500,
+.healthcare-mountain-bg footer .text-slate-600,
+.healthcare-mountain-bg footer .text-slate-700,
+.healthcare-mountain-bg footer .text-slate-800,
+.healthcare-mountain-bg footer .text-slate-900,
+.healthcare-mountain-bg footer .text-zinc-300,
+.healthcare-mountain-bg footer .text-zinc-400,
+.healthcare-mountain-bg footer .text-zinc-500,
+.healthcare-mountain-bg footer .text-zinc-600,
+.healthcare-mountain-bg footer .text-zinc-700,
+.healthcare-mountain-bg footer .text-zinc-800,
+.healthcare-mountain-bg footer .text-zinc-900,
+.healthcare-mountain-bg footer .text-neutral-300,
+.healthcare-mountain-bg footer .text-neutral-400,
+.healthcare-mountain-bg footer .text-neutral-500,
+.healthcare-mountain-bg footer .text-neutral-600,
+.healthcare-mountain-bg footer .text-neutral-700,
+.healthcare-mountain-bg footer .text-neutral-800,
+.healthcare-mountain-bg footer .text-neutral-900,
+.healthcare-mountain-bg footer .text-stone-300,
+.healthcare-mountain-bg footer .text-stone-400,
+.healthcare-mountain-bg footer .text-stone-500,
+.healthcare-mountain-bg footer .text-stone-600,
+.healthcare-mountain-bg footer .text-stone-700,
+.healthcare-mountain-bg footer .text-stone-800,
+.healthcare-mountain-bg footer .text-stone-900,
+.healthcare-mountain-bg footer .text-teal-400,
+.healthcare-mountain-bg footer .text-teal-500,
+.healthcare-mountain-bg footer .text-teal-600,
+.healthcare-mountain-bg footer .text-cyan-400,
+.healthcare-mountain-bg footer .text-cyan-500,
+.healthcare-mountain-bg footer .text-cyan-600,
+.healthcare-mountain-bg footer .text-blue-400,
+.healthcare-mountain-bg footer .text-blue-500,
+.healthcare-mountain-bg footer .text-blue-600,
+.healthcare-mountain-bg footer .text-green-400,
+.healthcare-mountain-bg footer .text-green-500,
+.healthcare-mountain-bg footer .text-green-600,
+.healthcare-mountain-bg footer .text-xs,
+.healthcare-mountain-bg footer .text-sm,
+.healthcare-mountain-bg footer .text-base,
+.healthcare-mountain-bg footer .text-lg,
+.healthcare-mountain-bg footer .text-xl,
+.healthcare-mountain-bg footer .text-2xl,
+.healthcare-mountain-bg footer .text-3xl,
+.healthcare-mountain-bg footer .text-4xl,
+.healthcare-mountain-bg footer .text-5xl,
+.healthcare-mountain-bg footer .text-6xl,
+.healthcare-mountain-bg footer .font-thin,
+.healthcare-mountain-bg footer .font-extralight,
+.healthcare-mountain-bg footer .font-light,
+.healthcare-mountain-bg footer .font-normal,
+.healthcare-mountain-bg footer .font-medium,
+.healthcare-mountain-bg footer .font-semibold,
+.healthcare-mountain-bg footer .font-bold,
+.healthcare-mountain-bg footer .font-extrabold,
+.healthcare-mountain-bg footer .font-black {
+  color: rgba(255, 255, 255, 1) !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* FORCE SPECIFIC PROBLEMATIC ELEMENTS - ONLY FOR HEALTHCARE PAGES */
+.healthcare-mountain-bg footer .healthcare-glass-card,
+.healthcare-mountain-bg footer .healthcare-glass-card *,
+.healthcare-mountain-bg footer .healthcare-glass-hero,
+.healthcare-mountain-bg footer .healthcare-glass-hero *,
+.healthcare-mountain-bg footer .healthcare-glass-overlay,
+.healthcare-mountain-bg footer .healthcare-glass-overlay *,
+.healthcare-mountain-bg footer .bg-gray-800\/50,
+.healthcare-mountain-bg footer .bg-gray-800\/50 *,
+.healthcare-mountain-bg footer .grid,
+.healthcare-mountain-bg footer .grid *,
+.healthcare-mountain-bg footer .flex,
+.healthcare-mountain-bg footer .flex *,
+.healthcare-mountain-bg footer .space-y-1,
+.healthcare-mountain-bg footer .space-y-1 *,
+.healthcare-mountain-bg footer .space-y-2,
+.healthcare-mountain-bg footer .space-y-2 *,
+.healthcare-mountain-bg footer .gap-2,
+.healthcare-mountain-bg footer .gap-2 *,
+.healthcare-mountain-bg footer .gap-3,
+.healthcare-mountain-bg footer .gap-3 *,
+.healthcare-mountain-bg footer .gap-6,
+.healthcare-mountain-bg footer .gap-6 *,
+.healthcare-mountain-bg footer .mb-3,
+.healthcare-mountain-bg footer .mb-3 *,
+.healthcare-mountain-bg footer .mb-4,
+.healthcare-mountain-bg footer .mb-4 *,
+.healthcare-mountain-bg footer .mb-8,
+.healthcare-mountain-bg footer .mb-8 *,
+.healthcare-mountain-bg footer .pt-4,
+.healthcare-mountain-bg footer .pt-4 *,
+.healthcare-mountain-bg footer .border-t,
+.healthcare-mountain-bg footer .border-t *,
+.healthcare-mountain-bg footer .border-gray-700,
+.healthcare-mountain-bg footer .border-gray-700 *,
+.healthcare-mountain-bg footer .text-center,
+.healthcare-mountain-bg footer .text-center *,
+.healthcare-mountain-bg footer .max-w-md,
+.healthcare-mountain-bg footer .max-w-md *,
+.healthcare-mountain-bg footer .items-center,
+.healthcare-mountain-bg footer .items-center *,
+.healthcare-mountain-bg footer .items-start,
+.healthcare-mountain-bg footer .items-start *,
+.healthcare-mountain-bg footer .justify-center,
+.healthcare-mountain-bg footer .justify-center *,
+.healthcare-mountain-bg footer .w-10,
+.healthcare-mountain-bg footer .w-10 *,
+.healthcare-mountain-bg footer .h-10,
+.healthcare-mountain-bg footer .h-10 *,
+.healthcare-mountain-bg footer .w-3,
+.healthcare-mountain-bg footer .w-3 *,
+.healthcare-mountain-bg footer .h-3,
+.healthcare-mountain-bg footer .h-3 *,
+.healthcare-mountain-bg footer .w-5,
+.healthcare-mountain-bg footer .w-5 *,
+.healthcare-mountain-bg footer .h-5,
+.healthcare-mountain-bg footer .h-5 *,
+.healthcare-mountain-bg footer .rounded-lg,
+.healthcare-mountain-bg footer .rounded-lg *,
+.healthcare-mountain-bg footer .rounded-2xl,
+.healthcare-mountain-bg footer .rounded-2xl *,
+.healthcare-mountain-bg footer .object-contain,
+.healthcare-mountain-bg footer .object-contain *,
+.healthcare-mountain-bg footer .font-semibold,
+.healthcare-mountain-bg footer .font-semibold *,
+.healthcare-mountain-bg footer .font-bold,
+.healthcare-mountain-bg footer .font-bold *,
+.healthcare-mountain-bg footer .block,
+.healthcare-mountain-bg footer .block *,
+.healthcare-mountain-bg footer .inline,
+.healthcare-mountain-bg footer .inline *,
+.healthcare-mountain-bg footer .inline-block,
+.healthcare-mountain-bg footer .inline-block *,
+.healthcare-mountain-bg footer .hover\:text-green-500,
+.healthcare-mountain-bg footer .hover\:text-green-500 *,
+.healthcare-mountain-bg footer .transition-colors,
+.healthcare-mountain-bg footer .transition-colors *,
+.healthcare-mountain-bg footer .md\:col-span-2,
+.healthcare-mountain-bg footer .md\:col-span-2 *,
+.healthcare-mountain-bg footer .md\:grid-cols-4,
+.healthcare-mountain-bg footer .md\:grid-cols-4 *,
+.healthcare-mountain-bg footer .bg-teal-500,
+.healthcare-mountain-bg footer .bg-teal-500 *,
+.healthcare-mountain-bg footer .hidden,
+.healthcare-mountain-bg footer .hidden * {
+  color: rgba(255, 255, 255, 1) !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* FORCE ALL POSSIBLE NESTED COMBINATIONS - ONLY FOR HEALTHCARE PAGES */
+.healthcare-mountain-bg footer div div,
+.healthcare-mountain-bg footer div div *,
+.healthcare-mountain-bg footer div p,
+.healthcare-mountain-bg footer div p *,
+.healthcare-mountain-bg footer div span,
+.healthcare-mountain-bg footer div span *,
+.healthcare-mountain-bg footer div h3,
+.healthcare-mountain-bg footer div h3 *,
+.healthcare-mountain-bg footer div h4,
+.healthcare-mountain-bg footer div h4 *,
+.healthcare-mountain-bg footer p span,
+.healthcare-mountain-bg footer p span *,
+.healthcare-mountain-bg footer span span,
+.healthcare-mountain-bg footer span span *,
+.healthcare-mountain-bg footer a span,
+.healthcare-mountain-bg footer a span *,
+.healthcare-mountain-bg footer .grid .space-y-1,
+.healthcare-mountain-bg footer .grid .space-y-1 *,
+.healthcare-mountain-bg footer .grid .space-y-2,
+.healthcare-mountain-bg footer .grid .space-y-2 *,
+.healthcare-mountain-bg footer .flex .gap-2,
+.healthcare-mountain-bg footer .flex .gap-2 *,
+.healthcare-mountain-bg footer .flex .gap-3,
+.healthcare-mountain-bg footer .flex .gap-3 *,
+.healthcare-mountain-bg footer .healthcare-glass-card .grid,
+.healthcare-mountain-bg footer .healthcare-glass-card .grid *,
+.healthcare-mountain-bg footer .healthcare-glass-card .flex,
+.healthcare-mountain-bg footer .healthcare-glass-card .flex *,
+.healthcare-mountain-bg footer .healthcare-glass-card div,
+.healthcare-mountain-bg footer .healthcare-glass-card div *,
+.healthcare-mountain-bg footer .healthcare-glass-card p,
+.healthcare-mountain-bg footer .healthcare-glass-card p *,
+.healthcare-mountain-bg footer .healthcare-glass-card span,
+.healthcare-mountain-bg footer .healthcare-glass-card span *,
+.healthcare-mountain-bg footer .healthcare-glass-card h3,
+.healthcare-mountain-bg footer .healthcare-glass-card h3 *,
+.healthcare-mountain-bg footer .healthcare-glass-card h4,
+.healthcare-mountain-bg footer .healthcare-glass-card h4 * {
+  color: rgba(255, 255, 255, 1) !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* OVERRIDE ANY CSS CUSTOM PROPERTIES OR VARIABLES - ONLY FOR HEALTHCARE PAGES */
+.healthcare-mountain-bg footer {
+  --tw-text-opacity: 1 !important;
+  --text-color: rgba(255, 255, 255, 1) !important;
+  --text-opacity: 1 !important;
+}
+
+/* FORCE SVG ICONS TO BE WHITE - ONLY FOR HEALTHCARE PAGES */
+.healthcare-mountain-bg footer svg,
+.healthcare-mountain-bg footer svg *,
+.healthcare-mountain-bg footer .w-3.h-3,
+.healthcare-mountain-bg footer .w-5.h-5,
+.healthcare-mountain-bg footer .text-green-500 svg,
+.healthcare-mountain-bg footer .text-white svg {
+  color: rgba(255, 255, 255, 1) !important;
+  fill: rgba(255, 255, 255, 1) !important;
+  stroke: rgba(255, 255, 255, 1) !important;
+}
+
+/* FORCE ALL PSEUDO-ELEMENTS TO BE WHITE - ONLY FOR HEALTHCARE PAGES */
+.healthcare-mountain-bg footer *::before,
+.healthcare-mountain-bg footer *::after,
+.healthcare-mountain-bg footer div::before,
+.healthcare-mountain-bg footer div::after,
+.healthcare-mountain-bg footer p::before,
+.healthcare-mountain-bg footer p::after,
+.healthcare-mountain-bg footer span::before,
+.healthcare-mountain-bg footer span::after {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+/* FORCE ALL INTERACTION STATES TO BE WHITE - ONLY FOR HEALTHCARE PAGES */
+.healthcare-mountain-bg footer *:hover,
+.healthcare-mountain-bg footer *:focus,
+.healthcare-mountain-bg footer *:active,
+.healthcare-mountain-bg footer *:visited,
+.healthcare-mountain-bg footer a:hover,
+.healthcare-mountain-bg footer a:focus,
+.healthcare-mountain-bg footer a:active,
+.healthcare-mountain-bg footer a:visited,
+.healthcare-mountain-bg footer .hover\:text-green-500:hover {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+/* NUCLEAR OPTION - FORCE EVERYTHING IN FOOTER TO BE WHITE - ONLY FOR HEALTHCARE PAGES */
+.healthcare-mountain-bg footer * {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+/* SPECIFIC BRAND ELEMENTS THAT MIGHT BE PROBLEMATIC - ONLY FOR HEALTHCARE PAGES */
+.healthcare-mountain-bg footer .text-green-500 {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.healthcare-mountain-bg footer .text-xs {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.healthcare-mountain-bg footer .text-sm {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.healthcare-mountain-bg footer .text-lg {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+/* ADDITIONAL LOGIN/REGISTER ICON FIXES - ENSURE DARK VISIBLE ICONS */
+
+/* Target all possible icon combinations in login/register forms */
+.healthcare-glass-hero form svg,
+.healthcare-glass-hero form .lucide,
+.healthcare-glass-hero .relative svg,
+.healthcare-glass-hero .absolute svg,
+.healthcare-glass-hero input + div svg,
+.healthcare-glass-hero input ~ div svg,
+.healthcare-glass-hero .w-5.h-5 svg,
+.healthcare-glass-hero .w-4.h-4 svg,
+.healthcare-glass-hero .w-3.h-3 svg {
+  color: rgba(55, 65, 81, 0.8) !important;
+  fill: rgba(55, 65, 81, 0.8) !important;
+  stroke: rgba(55, 65, 81, 0.8) !important;
+  opacity: 1 !important;
+}
+
+/* Force specific icon elements to be dark */
+.healthcare-glass-hero .absolute.left-3 svg,
+.healthcare-glass-hero .absolute.right-3 svg {
+  color: rgba(55, 65, 81, 0.8) !important;
+  fill: rgba(55, 65, 81, 0.8) !important;
+  stroke: rgba(55, 65, 81, 0.8) !important;
+}
+
+/* Override any white icon colors in forms */
+.healthcare-glass-hero .text-white\/60 svg,
+.healthcare-glass-hero .text-white\/60,
+.healthcare-glass-hero form .text-white\/60 {
+  color: rgba(55, 65, 81, 0.8) !important;
+}
+
+/* Ensure input text is black on white background */
+.healthcare-glass-hero input[type="email"],
+.healthcare-glass-hero input[type="password"],
+.healthcare-glass-hero input[type="text"],
+.healthcare-glass-hero input[type="tel"],
+.healthcare-glass-hero input[type="date"],
+.healthcare-glass-hero textarea,
+.healthcare-glass-hero select {
+  color: rgba(31, 41, 55, 1) !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  border: 1px solid rgba(209, 213, 219, 1) !important;
+}
+
+.healthcare-glass-hero input[type="email"]::placeholder,
+.healthcare-glass-hero input[type="password"]::placeholder,
+.healthcare-glass-hero input[type="text"]::placeholder,
+.healthcare-glass-hero input[type="tel"]::placeholder,
+.healthcare-glass-hero textarea::placeholder {
+  color: rgba(107, 114, 128, 0.7) !important;
+}
+
+/* Force all Mail, Lock, User, Phone, Calendar, MapPin, Heart icons to be dark */
+.healthcare-glass-hero .lucide-mail,
+.healthcare-glass-hero .lucide-lock,
+.healthcare-glass-hero .lucide-user,
+.healthcare-glass-hero .lucide-phone,
+.healthcare-glass-hero .lucide-calendar,
+.healthcare-glass-hero .lucide-map-pin,
+.healthcare-glass-hero .lucide-heart,
+.healthcare-glass-hero .lucide-eye,
+.healthcare-glass-hero .lucide-eye-off {
+  color: rgba(55, 65, 81, 0.8) !important;
+  fill: rgba(55, 65, 81, 0.8) !important;
+  stroke: rgba(55, 65, 81, 0.8) !important;
+}
+/* ENHANCED PASSWORD VISIBILITY ICON STYLING */
+
+/* Ensure password toggle buttons have proper touch targets */
+.healthcare-glass-hero button[type="button"] {
+  min-width: 24px !important;
+  min-height: 24px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 6px !important;
+  transition: all 0.2s ease !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 4px !important;
+}
+
+.healthcare-glass-hero button[type="button"]:hover {
+  background: rgba(55, 65, 81, 0.1) !important;
+  transform: scale(1.05) !important;
+}
+
+.healthcare-glass-hero button[type="button"]:active {
+  transform: scale(0.95) !important;
+  background: rgba(55, 65, 81, 0.2) !important;
+}
+
+/* Ensure eye icons are properly sized and positioned */
+.healthcare-glass-hero button[type="button"] svg {
+  width: 18px !important;
+  height: 18px !important;
+  color: rgba(55, 65, 81, 0.8) !important;
+  fill: none !important;
+  stroke: currentColor !important;
+  stroke-width: 2 !important;
+}
+
+/* Specific styling for password input containers */
+.healthcare-glass-hero .relative:has(input[type="password"]) {
+  position: relative !important;
+}
+
+.healthcare-glass-hero .relative:has(input[type="password"]) input {
+  padding-right: 52px !important;
+}
+
+.healthcare-glass-hero .relative:has(input[type="password"]) button {
+  position: absolute !important;
+  right: 8px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 20 !important;
+}
+
+/* Ensure no overlap with input text */
+.healthcare-glass-hero input[type="password"],
+.healthcare-glass-hero input[type="text"] {
+  box-sizing: border-box !important;
+}
+
+/* Clear visual separation between input content and icons */
+.healthcare-glass-hero .relative::after {
+  content: '' !important;
+  position: absolute !important;
+  right: 44px !important;
+  top: 20% !important;
+  bottom: 20% !important;
+  width: 1px !important;
+  background: rgba(209, 213, 219, 0.5) !important;
+  pointer-events: none !important;
+}
+
+/* Hide separator for inputs without right icons */
+.healthcare-glass-hero .relative:not(:has(button))::after {
+  display: none !important;
+}
+/* ENHANCED "BACK TO HOME" NAVIGATION VISIBILITY */
+
+/* Make back navigation highly visible and professional */
+.healthcare-slide-up {
+  background: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 12px !important;
+  padding: 12px 20px !important;
+  color: rgba(255, 255, 255, 1) !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  text-decoration: none !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin-bottom: 24px !important;
+}
+
+.healthcare-slide-up:hover {
+  background: rgba(255, 255, 255, 0.25) !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  color: rgba(255, 255, 255, 1) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.healthcare-slide-up:active {
+  transform: translateY(0px) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Ensure the arrow icon is visible */
+.healthcare-slide-up svg {
+  color: rgba(255, 255, 255, 1) !important;
+  fill: none !important;
+  stroke: currentColor !important;
+  stroke-width: 2 !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+/* Alternative styling for back navigation links */
+a[href="/"] {
+  background: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 12px !important;
+  padding: 12px 20px !important;
+  color: rgba(255, 255, 255, 1) !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  text-decoration: none !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin-bottom: 24px !important;
+}
+
+a[href="/"]:hover {
+  background: rgba(255, 255, 255, 0.25) !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  color: rgba(255, 255, 255, 1) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Specific styling for back navigation in login/register pages */
+.healthcare-mountain-bg a[href="/"],
+.healthcare-mountain-bg a[href="/login"],
+.healthcare-mountain-bg .healthcare-slide-up {
+  background: rgba(22, 160, 133, 0.2) !important;
+  backdrop-filter: blur(15px) !important;
+  -webkit-backdrop-filter: blur(15px) !important;
+  border: 1px solid rgba(22, 160, 133, 0.3) !important;
+  border-radius: 12px !important;
+  padding: 12px 20px !important;
+  color: rgba(255, 255, 255, 1) !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  text-decoration: none !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 12px rgba(22, 160, 133, 0.2) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin-bottom: 24px !important;
+}
+
+.healthcare-mountain-bg a[href="/"]:hover,
+.healthcare-mountain-bg a[href="/login"]:hover,
+.healthcare-mountain-bg .healthcare-slide-up:hover {
+  background: rgba(22, 160, 133, 0.3) !important;
+  border-color: rgba(22, 160, 133, 0.5) !important;
+  color: rgba(255, 255, 255, 1) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 20px rgba(22, 160, 133, 0.3) !important;
+}
+
+/* Ensure back navigation is always visible on top */
+.healthcare-mountain-bg > div:first-child {
+  position: relative !important;
+  z-index: 50 !important;
+}
+
+/* Make sure text is always white and visible */
+.healthcare-mountain-bg a[href="/"] span,
+.healthcare-mountain-bg a[href="/login"] span,
+.healthcare-mountain-bg .healthcare-slide-up span {
+  color: rgba(255, 255, 255, 1) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Enhanced visibility for small screens */
+@media (max-width: 768px) {
+  .healthcare-slide-up,
+  a[href="/"],
+  a[href="/login"] {
+    padding: 14px 24px !important;
+    font-size: 16px !important;
+    margin-bottom: 32px !important;
+  }
+  
+  .healthcare-slide-up svg,
+  a[href="/"] svg,
+  a[href="/login"] svg {
+    width: 18px !important;
+    height: 18px !important;
+  }
+}
+/* SUBTLE "BACK" BUTTON - INSIDE CARD HEADER */
+
+/* Minimal back button styling */
+.healthcare-glass-hero a[href="/"],
+.healthcare-glass-hero .back-button {
+  background: none !important;
+  border: none !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  padding: 4px 8px !important;
+  border-radius: 6px !important;
+  transition: all 0.2s ease !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+.healthcare-glass-hero a[href="/"]:hover,
+.healthcare-glass-hero .back-button:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: rgba(255, 255, 255, 1) !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Override the prominent back button styles for login page */
+.healthcare-glass-hero .healthcare-slide-up,
+.healthcare-glass-hero a[href="/"],
+.healthcare-glass-hero a[href="/login"] {
+  background: none !important;
+  backdrop-filter: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  margin-bottom: 0 !important;
+  padding: 4px 8px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.healthcare-glass-hero .healthcare-slide-up:hover,
+.healthcare-glass-hero a[href="/"]:hover,
+.healthcare-glass-hero a[href="/login"]:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Ensure back button icons are subtle */
+.healthcare-glass-hero a[href="/"] svg,
+.healthcare-glass-hero .back-button svg {
+  width: 16px !important;
+  height: 16px !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  stroke-width: 2 !important;
+}
+/* ACCESSIBILITY AND UX IMPROVEMENTS */
+
+/* Proper focus states for all interactive elements */
+.healthcare-input:focus,
+input:focus,
+button:focus,
+a:focus {
+  outline: 2px solid rgba(22, 160, 133, 0.8) !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 3px rgba(22, 160, 133, 0.2) !important;
+}
+
+/* High contrast focus for better accessibility */
+.healthcare-input:focus-visible,
+input:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid rgba(22, 160, 133, 1) !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 4px rgba(22, 160, 133, 0.3) !important;
+}
+
+/* Enhanced input styling for better contrast */
+.healthcare-input {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border: 2px solid rgba(209, 213, 219, 1) !important;
+  color: rgba(31, 41, 55, 1) !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+}
+
+.healthcare-input:focus {
+  background: rgba(255, 255, 255, 1) !important;
+  border-color: rgba(22, 160, 133, 1) !important;
+  color: rgba(31, 41, 55, 1) !important;
+}
+
+/* Proper label styling for accessibility */
+label {
+  color: rgba(255, 255, 255, 0.95) !important;
+  font-weight: 600 !important;
+  margin-bottom: 8px !important;
+  display: block !important;
+}
+
+/* Enhanced placeholder contrast */
+.healthcare-input::placeholder {
+  color: rgba(107, 114, 128, 0.8) !important;
+  font-weight: 400 !important;
+}
+
+/* Button accessibility improvements */
+.healthcare-btn-premium {
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+  position: relative !important;
+}
+
+.healthcare-btn-premium:focus {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 0 0 4px rgba(22, 160, 133, 0.3) !important;
+}
+
+.healthcare-btn-premium:disabled {
+  opacity: 0.7 !important;
+  cursor: not-allowed !important;
+  transform: none !important;
+}
+
+/* Enhanced register link visibility */
+.register-link-enhanced {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  padding: 12px 16px !important;
+  border-radius: 12px !important;
+  text-align: center !important;
+  transition: all 0.3s ease !important;
+}
+
+.register-link-enhanced:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  transform: translateY(-1px) !important;
+}
+
+.register-link-enhanced a {
+  color: rgba(255, 255, 255, 1) !important;
+  font-weight: 600 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px !important;
+}
+
+.register-link-enhanced a:hover {
+  color: rgba(72, 201, 176, 1) !important;
+}
+
+/* Screen reader only text for better accessibility */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .healthcare-input {
+    background: rgba(255, 255, 255, 1) !important;
+    border: 3px solid rgba(0, 0, 0, 0.8) !important;
+    color: rgba(0, 0, 0, 1) !important;
+  }
+  
+  .healthcare-input:focus {
+    border-color: rgba(22, 160, 133, 1) !important;
+    outline: 3px solid rgba(22, 160, 133, 1) !important;
+  }
+  
+  label {
+    color: rgba(255, 255, 255, 1) !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8) !important;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .healthcare-input,
+  .healthcare-btn-premium,
+  .register-link-enhanced {
+    transition: none !important;
+  }
+  
+  .healthcare-btn-premium:hover,
+  .healthcare-btn-premium:focus {
+    transform: none !important;
+  }
+}
+
+/* Mobile accessibility improvements */
+@media (max-width: 768px) {
+  .healthcare-input {
+    font-size: 16px !important; /* Prevents zoom on iOS */
+    padding: 14px 12px !important;
+  }
+  
+  .healthcare-btn-premium {
+    padding: 16px 24px !important;
+    font-size: 16px !important;
+  }
+  
+  label {
+    font-size: 14px !important;
+  }
+}
+
+/* MINIMAL LOGIN DESIGN - CLEAN AND FOCUSED */
+
+/* Subtle back button inside card */
+.healthcare-glass-hero .back-button {
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+}
+
+.healthcare-glass-hero .back-button:hover {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+/* Clean header styling */
+.healthcare-glass-hero h1 {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  color: rgba(255, 255, 255, 1) !important;
+  margin-bottom: 8px !important;
+}
+
+.healthcare-glass-hero h1 + p {
+  font-size: 16px !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-weight: 500 !important;
+}
+
+/* Remove excessive spacing and clutter */
+.healthcare-glass-hero .hospital-branding,
+.healthcare-glass-hero .register-link-enhanced {
+  display: none !important;
+}
+
+/* Focus on form elements */
+.healthcare-glass-hero form {
+  margin-top: 32px !important;
+}
+
+/* Clean register link styling */
+.healthcare-glass-hero .border-t {
+  border-color: rgba(255, 255, 255, 0.15) !important;
+  padding-top: 20px !important;
+  margin-top: 24px !important;
+}
+
+.healthcare-glass-hero .border-t p {
+  font-size: 14px !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.healthcare-glass-hero .border-t a {
+  color: rgba(255, 255, 255, 1) !important;
+  font-weight: 600 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 2px !important;
+}
+
+.healthcare-glass-hero .border-t a:hover {
+  color: rgba(72, 201, 176, 1) !important;
+}
+
+/* FOOTER TEXT WHITE FIX FOR ABOUT, SERVICES, AND CONTACT PAGES */
+/* Force all footer text to be white on healthcare pages */
+
+/* Target About, Services, and Contact pages specifically */
+.healthcare-mountain-bg-alt1 footer *,
+.healthcare-mountain-bg-alt2 footer *,
+.healthcare-mountain-bg-alt3 footer * {
+  color: rgba(255, 255, 255, 1) !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Force all headings in footer to be white */
+.healthcare-mountain-bg-alt1 footer h1,
+.healthcare-mountain-bg-alt1 footer h2,
+.healthcare-mountain-bg-alt1 footer h3,
+.healthcare-mountain-bg-alt1 footer h4,
+.healthcare-mountain-bg-alt1 footer h5,
+.healthcare-mountain-bg-alt1 footer h6,
+.healthcare-mountain-bg-alt2 footer h1,
+.healthcare-mountain-bg-alt2 footer h2,
+.healthcare-mountain-bg-alt2 footer h3,
+.healthcare-mountain-bg-alt2 footer h4,
+.healthcare-mountain-bg-alt2 footer h5,
+.healthcare-mountain-bg-alt2 footer h6,
+.healthcare-mountain-bg-alt3 footer h1,
+.healthcare-mountain-bg-alt3 footer h2,
+.healthcare-mountain-bg-alt3 footer h3,
+.healthcare-mountain-bg-alt3 footer h4,
+.healthcare-mountain-bg-alt3 footer h5,
+.healthcare-mountain-bg-alt3 footer h6 {
+  color: rgba(255, 255, 255, 1) !important;
+  font-weight: 700 !important;
+}
+
+/* Force all links in footer to be white */
+.healthcare-mountain-bg-alt1 footer a,
+.healthcare-mountain-bg-alt2 footer a,
+.healthcare-mountain-bg-alt3 footer a {
+  color: rgba(255, 255, 255, 0.9) !important;
+  transition: color 0.3s ease !important;
+}
+
+.healthcare-mountain-bg-alt1 footer a:hover,
+.healthcare-mountain-bg-alt2 footer a:hover,
+.healthcare-mountain-bg-alt3 footer a:hover {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+/* Force all text classes to be white */
+.healthcare-mountain-bg-alt1 footer .text-gray-400,
+.healthcare-mountain-bg-alt1 footer .text-gray-500,
+.healthcare-mountain-bg-alt1 footer .text-gray-600,
+.healthcare-mountain-bg-alt1 footer .text-cyan-400,
+.healthcare-mountain-bg-alt1 footer .text-purple-400,
+.healthcare-mountain-bg-alt1 footer .text-red-400,
+.healthcare-mountain-bg-alt2 footer .text-gray-400,
+.healthcare-mountain-bg-alt2 footer .text-gray-500,
+.healthcare-mountain-bg-alt2 footer .text-gray-600,
+.healthcare-mountain-bg-alt2 footer .text-cyan-400,
+.healthcare-mountain-bg-alt2 footer .text-purple-400,
+.healthcare-mountain-bg-alt2 footer .text-red-400,
+.healthcare-mountain-bg-alt3 footer .text-gray-400,
+.healthcare-mountain-bg-alt3 footer .text-gray-500,
+.healthcare-mountain-bg-alt3 footer .text-gray-600,
+.healthcare-mountain-bg-alt3 footer .text-cyan-400,
+.healthcare-mountain-bg-alt3 footer .text-purple-400,
+.healthcare-mountain-bg-alt3 footer .text-red-400 {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+/* Force all SVG icons in footer to be white */
+.healthcare-mountain-bg-alt1 footer svg,
+.healthcare-mountain-bg-alt2 footer svg,
+.healthcare-mountain-bg-alt3 footer svg {
+  color: rgba(255, 255, 255, 1) !important;
+  fill: rgba(255, 255, 255, 1) !important;
+  stroke: rgba(255, 255, 255, 1) !important;
+}
+
+/* Nuclear option - force everything in footer to be white */
+.healthcare-mountain-bg-alt1 footer,
+.healthcare-mountain-bg-alt2 footer,
+.healthcare-mountain-bg-alt3 footer {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+/* Override any nested elements */
+.healthcare-mountain-bg-alt1 footer div,
+.healthcare-mountain-bg-alt1 footer p,
+.healthcare-mountain-bg-alt1 footer span,
+.healthcare-mountain-bg-alt1 footer li,
+.healthcare-mountain-bg-alt2 footer div,
+.healthcare-mountain-bg-alt2 footer p,
+.healthcare-mountain-bg-alt2 footer span,
+.healthcare-mountain-bg-alt2 footer li,
+.healthcare-mountain-bg-alt3 footer div,
+.healthcare-mountain-bg-alt3 footer p,
+.healthcare-mountain-bg-alt3 footer span,
+.healthcare-mountain-bg-alt3 footer li {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+/* Force all text size classes to be white */
+.healthcare-mountain-bg-alt1 footer .text-xs,
+.healthcare-mountain-bg-alt1 footer .text-sm,
+.healthcare-mountain-bg-alt1 footer .text-lg,
+.healthcare-mountain-bg-alt1 footer .text-xl,
+.healthcare-mountain-bg-alt2 footer .text-xs,
+.healthcare-mountain-bg-alt2 footer .text-sm,
+.healthcare-mountain-bg-alt2 footer .text-lg,
+.healthcare-mountain-bg-alt2 footer .text-xl,
+.healthcare-mountain-bg-alt3 footer .text-xs,
+.healthcare-mountain-bg-alt3 footer .text-sm,
+.healthcare-mountain-bg-alt3 footer .text-lg,
+.healthcare-mountain-bg-alt3 footer .text-xl {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+/* REDESIGNED HEALTHCARE NAVBAR - ENHANCED BRANDING & LARGER TEXT */
+.healthcare-navbar-redesigned {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(25px) !important;
+  -webkit-backdrop-filter: blur(25px) !important;
+  border-bottom: 2px solid rgba(22, 160, 133, 0.1) !important;
+  box-shadow: 
+    0 10px 40px rgba(0, 0, 0, 0.08),
+    0 4px 0 rgba(255, 255, 255, 0.9) inset,
+    0 0 0 1px rgba(22, 160, 133, 0.05) inset;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  min-height: 90px;
+}
+
+/* Enhanced Logo Section - Much More Prominent */
+.healthcare-logo-redesigned {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 2px solid rgba(22, 160, 133, 0.15) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 
+    0 8px 25px rgba(0, 0, 0, 0.06),
+    0 2px 0 rgba(255, 255, 255, 0.8) inset;
+}
+
+.healthcare-logo-redesigned:hover {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-color: rgba(22, 160, 133, 0.25) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 
+    0 12px 35px rgba(0, 0, 0, 0.1),
+    0 4px 0 rgba(255, 255, 255, 0.9) inset;
+}
+
+/* Logo Icon Styling - Larger and More Visible */
+.healthcare-logo-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.healthcare-logo-fallback-redesigned {
+  box-shadow: 
+    0 6px 20px rgba(22, 160, 133, 0.3),
+    0 2px 0 rgba(255, 255, 255, 0.2) inset;
+  transition: all 0.3s ease;
+}
+
+.healthcare-logo-fallback-redesigned:hover {
+  transform: scale(1.05) rotate(5deg);
+  box-shadow: 
+    0 8px 25px rgba(22, 160, 133, 0.4),
+    0 3px 0 rgba(255, 255, 255, 0.3) inset;
+}
+
+/* Brand Text Styling - Much Larger and More Prominent */
+.healthcare-brand-text h1 {
+  font-size: 2rem !important;
+  font-weight: 800 !important;
+  color: rgba(17, 24, 39, 1) !important;
+  text-shadow: none !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.025em !important;
+}
+
+.healthcare-brand-text p {
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+  color: rgba(22, 160, 133, 1) !important;
+  text-shadow: none !important;
+  line-height: 1.2 !important;
+  margin-top: 4px !important;
+}
+
+/* Redesigned Navigation Links - Larger Text & Better Spacing */
+.healthcare-nav-link-redesigned {
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+  color: rgba(55, 65, 81, 1) !important;
+  text-decoration: none !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  position: relative;
+  text-shadow: none !important;
+  background: rgba(255, 255, 255, 0.6) !important;
+  backdrop-filter: blur(15px) !important;
+  -webkit-backdrop-filter: blur(15px) !important;
+  border: 2px solid rgba(255, 255, 255, 0.4) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04) !important;
+}
+
+.healthcare-nav-link-redesigned:hover {
+  color: rgba(22, 160, 133, 1) !important;
+  background: rgba(22, 160, 133, 0.08) !important;
+  border-color: rgba(22, 160, 133, 0.2) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(22, 160, 133, 0.15) !important;
+}
+
+/* Active page indicator - More Prominent */
+.healthcare-nav-link-redesigned.active {
+  color: rgba(22, 160, 133, 1) !important;
+  background: rgba(22, 160, 133, 0.12) !important;
+  border-color: rgba(22, 160, 133, 0.3) !important;
+  font-weight: 700 !important;
+  box-shadow: 
+    0 6px 20px rgba(22, 160, 133, 0.2),
+    0 2px 0 rgba(22, 160, 133, 0.1) inset !important;
+}
+
+/* Redesigned Patient Portal Button - Larger and More Prominent */
+.healthcare-btn-redesigned {
+  background: linear-gradient(135deg, rgba(22, 160, 133, 1), rgba(19, 141, 117, 1)) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  color: white !important;
+  font-weight: 700 !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 
+    0 8px 25px rgba(22, 160, 133, 0.35),
+    0 2px 0 rgba(255, 255, 255, 0.2) inset !important;
+  border: 2px solid rgba(22, 160, 133, 0.6) !important;
+  text-shadow: none !important;
+  font-size: 1.125rem !important;
+}
+
+.healthcare-btn-redesigned:hover {
+  background: linear-gradient(135deg, rgba(19, 141, 117, 1), rgba(17, 122, 101, 1)) !important;
+  transform: translateY(-3px) scale(1.03) !important;
+  box-shadow: 
+    0 12px 35px rgba(22, 160, 133, 0.45),
+    0 3px 0 rgba(255, 255, 255, 0.3) inset !important;
+  border-color: rgba(22, 160, 133, 0.8) !important;
+}
+
+/* Redesigned Mobile Menu - Enhanced Glassmorphism */
+.healthcare-mobile-menu-redesigned {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(25px) !important;
+  -webkit-backdrop-filter: blur(25px) !important;
+  border-top: 2px solid rgba(22, 160, 133, 0.1) !important;
+  border-radius: 0 0 20px 20px !important;
+  box-shadow: 
+    0 10px 40px rgba(0, 0, 0, 0.1),
+    0 2px 0 rgba(255, 255, 255, 0.8) inset !important;
+  border-left: 2px solid rgba(22, 160, 133, 0.05) !important;
+  border-right: 2px solid rgba(22, 160, 133, 0.05) !important;
+  border-bottom: 2px solid rgba(22, 160, 133, 0.05) !important;
+}
+
+.healthcare-nav-link-mobile-redesigned {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  color: rgba(55, 65, 81, 1) !important;
+  font-weight: 600 !important;
+  text-shadow: none !important;
+  background: rgba(255, 255, 255, 0.6) !important;
+  backdrop-filter: blur(15px) !important;
+  -webkit-backdrop-filter: blur(15px) !important;
+  border: 2px solid rgba(255, 255, 255, 0.4) !important;
+  font-size: 1.25rem !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04) !important;
+}
+
+.healthcare-nav-link-mobile-redesigned:hover {
+  background: rgba(22, 160, 133, 0.08) !important;
+  transform: translateX(6px) !important;
+  color: rgba(22, 160, 133, 1) !important;
+  border-color: rgba(22, 160, 133, 0.2) !important;
+  box-shadow: 0 6px 20px rgba(22, 160, 133, 0.15) !important;
+}
+
+.healthcare-nav-link-mobile-redesigned.active {
+  color: rgba(22, 160, 133, 1) !important;
+  background: rgba(22, 160, 133, 0.12) !important;
+  border-color: rgba(22, 160, 133, 0.3) !important;
+  font-weight: 700 !important;
+  box-shadow: 
+    0 6px 20px rgba(22, 160, 133, 0.2),
+    0 2px 0 rgba(22, 160, 133, 0.1) inset !important;
+}
+
+/* Mobile Menu Button - Larger and More Visible */
+.healthcare-mobile-btn {
+  background: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 2px solid rgba(22, 160, 133, 0.15) !important;
+  color: rgba(55, 65, 81, 1) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06) !important;
+}
+
+.healthcare-mobile-btn:hover {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-color: rgba(22, 160, 133, 0.25) !important;
+  color: rgba(22, 160, 133, 1) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Ensure all text is highly visible and larger */
+.healthcare-navbar-redesigned * {
+  text-shadow: none !important;
+}
+
+/* Override any conflicting styles */
+.healthcare-navbar-redesigned a,
+.healthcare-navbar-redesigned button,
+.healthcare-navbar-redesigned h1,
+.healthcare-navbar-redesigned p {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Responsive adjustments for larger text */
+@media (max-width: 1024px) {
+  .healthcare-brand-text h1 {
+    font-size: 1.75rem !important;
+  }
+  
+  .healthcare-nav-link-redesigned,
+  .healthcare-nav-link-mobile-redesigned {
+    font-size: 1.125rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .healthcare-brand-text h1 {
+    font-size: 1.5rem !important;
+  }
+  
+  .healthcare-brand-text p {
+    font-size: 0.75rem !important;
+  }
+  
+  .healthcare-logo-icon img,
+  .healthcare-logo-fallback-redesigned {
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+  }
+}
+
+/* PREMIUM HEALTHCARE NAVBAR - ENHANCED GLASSMORPHISM WITH VISIBLE TEXT */
+.healthcare-navbar-premium {
+  background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    0 2px 0 rgba(255, 255, 255, 0.8) inset,
+    0 0 0 1px rgba(255, 255, 255, 0.2) inset;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Enhanced Logo Styling with Glassmorphism */
+.healthcare-logo-premium {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.6) !important;
+  backdrop-filter: blur(15px) !important;
+  -webkit-backdrop-filter: blur(15px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.healthcare-logo-premium:hover {
+  background: rgba(255, 255, 255, 0.75) !important;
+  border-color: rgba(22, 160, 133, 0.3) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Logo Image Styling */
+.healthcare-logo-image {
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Logo Text Styling - High Visibility */
+.healthcare-logo-title {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  color: rgba(17, 24, 39, 1) !important;
+  line-height: 1.2 !important;
+  text-shadow: none !important;
+}
+
+.healthcare-logo-tagline {
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  color: rgba(22, 160, 133, 1) !important;
+  line-height: 1.2 !important;
+  text-shadow: none !important;
+}
+
+/* Premium Navigation Links - Enhanced Visibility */
+.healthcare-nav-link {
+  color: rgba(55, 65, 81, 1) !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+  position: relative;
+  text-shadow: none !important;
+  background: rgba(255, 255, 255, 0.4) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.healthcare-nav-link:hover {
+  color: rgba(22, 160, 133, 1) !important;
+  background: rgba(22, 160, 133, 0.1) !important;
+  border-color: rgba(22, 160, 133, 0.2) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(22, 160, 133, 0.15) !important;
+}
+
+/* Active page indicator - High Visibility */
+.healthcare-nav-link.active {
+  color: rgba(22, 160, 133, 1) !important;
+  background: rgba(22, 160, 133, 0.15) !important;
+  border-color: rgba(22, 160, 133, 0.3) !important;
+  font-weight: 700 !important;
+  box-shadow: 0 2px 8px rgba(22, 160, 133, 0.2) !important;
+}
+
+/* Premium Patient Portal Button - Enhanced Glassmorphism */
+.healthcare-btn-premium-nav {
+  background: linear-gradient(135deg, rgba(22, 160, 133, 0.9), rgba(19, 141, 117, 0.9)) !important;
+  backdrop-filter: blur(15px) !important;
+  -webkit-backdrop-filter: blur(15px) !important;
+  color: white !important;
+  font-weight: 600 !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 12px rgba(22, 160, 133, 0.3) !important;
+  border: 1px solid rgba(22, 160, 133, 0.4) !important;
+  text-shadow: none !important;
+}
+
+.healthcare-btn-premium-nav:hover {
+  background: linear-gradient(135deg, rgba(19, 141, 117, 1), rgba(17, 122, 101, 1)) !important;
+  transform: translateY(-2px) scale(1.02) !important;
+  box-shadow: 0 8px 20px rgba(22, 160, 133, 0.4) !important;
+  border-color: rgba(22, 160, 133, 0.6) !important;
+}
+
+/* Premium Mobile Menu - Enhanced Glassmorphism */
+.healthcare-mobile-menu {
+  background: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.4) !important;
+  border-radius: 0 0 16px 16px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.healthcare-nav-link-mobile {
+  transition: all 0.2s ease !important;
+  color: rgba(55, 65, 81, 1) !important;
+  font-weight: 600 !important;
+  text-shadow: none !important;
+  background: rgba(255, 255, 255, 0.4) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.healthcare-nav-link-mobile:hover {
+  background: rgba(22, 160, 133, 0.1) !important;
+  transform: translateX(4px) !important;
+  color: rgba(22, 160, 133, 1) !important;
+  border-color: rgba(22, 160, 133, 0.2) !important;
+  box-shadow: 0 2px 8px rgba(22, 160, 133, 0.15) !important;
+}
+
+.healthcare-nav-link-mobile.active {
+  color: rgba(22, 160, 133, 1) !important;
+  background: rgba(22, 160, 133, 0.15) !important;
+  border-color: rgba(22, 160, 133, 0.3) !important;
+  font-weight: 700 !important;
+  box-shadow: 0 2px 8px rgba(22, 160, 133, 0.2) !important;
+}
+
+/* Mobile Menu Button Glassmorphism */
+.healthcare-navbar-premium button {
+  background: rgba(255, 255, 255, 0.6) !important;
+  backdrop-filter: blur(15px) !important;
+  -webkit-backdrop-filter: blur(15px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  color: rgba(55, 65, 81, 1) !important;
+  transition: all 0.2s ease !important;
+}
+
+.healthcare-navbar-premium button:hover {
+  background: rgba(255, 255, 255, 0.8) !important;
+  border-color: rgba(22, 160, 133, 0.3) !important;
+  color: rgba(22, 160, 133, 1) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Ensure all text is highly visible */
+.healthcare-navbar-premium * {
+  text-shadow: none !important;
+}
+
+/* Override any conflicting styles */
+.healthcare-navbar-premium a,
+.healthcare-navbar-premium button,
+.healthcare-navbar-premium h1,
+.healthcare-navbar-premium p {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* SIMPLE CLEAN NAVBAR - NO COMPLEX ANIMATIONS */
+/* Clean, minimal navigation styling */
+
+/* Simple navbar styling */
+.healthcare-navbar-premium {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Clean navigation links */
+.healthcare-navbar-premium a {
+  color: rgba(75, 85, 99, 1) !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease !important;
+}
+
+.healthcare-navbar-premium a:hover {
+  color: rgba(37, 99, 235, 1) !important;
+}
+
+/* Active page indicator - simple bold text */
+.healthcare-navbar-premium a[class*="text-gray-800"] {
+  color: rgba(17, 24, 39, 1) !important;
+  font-weight: 600 !important;
+}
+
+/* Simple button styling */
+.healthcare-navbar-premium .bg-blue-600 {
+  background: rgba(37, 99, 235, 1) !important;
+  color: white !important;
+  padding: 8px 16px !important;
+  border-radius: 6px !important;
+  font-weight: 500 !important;
+  transition: background-color 0.2s ease !important;
+}
+
+.healthcare-navbar-premium .bg-blue-600:hover {
+  background: rgba(29, 78, 216, 1) !important;
+}
+
+/* Mobile menu styling */
+.healthcare-navbar-premium .lg\\:hidden {
+  background: white !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Remove all complex animations and effects */
+.healthcare-navbar-premium * {
+  animation: none !important;
+  transform: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  background-image: none !important;
+}
+
+/* Override any remaining complex styles */
+.healthcare-navbar-premium .hidden.lg\\:flex a {
+  position: static !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  transform: none !important;
+  animation: none !important;
+}
+
+.healthcare-navbar-premium .hidden.lg\\:flex a:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  animation: none !important;
+}
+
+/* Clean mobile menu */
+.healthcare-navbar-premium .lg\\:hidden a {
+  padding: 8px 0 !important;
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  transform: none !important;
+  animation: none !important;
+}
+
+.healthcare-navbar-premium .lg\\:hidden a:hover {
+  transform: none !important;
+  animation: none !important;
+}
+
+/* PERFORMANCE OPTIMIZATIONS */
+/* Reduce heavy animations and effects for better scroll performance */
+
+/* Disable heavy blur effects on scroll */
+.healthcare-glass-section {
+  will-change: auto !important;
+}
+
+/* Optimize floating animations */
+.healthcare-float,
+.healthcare-float-delayed {
+  animation: none !important;
+  transform: none !important;
+}
+
+/* Reduce backdrop-filter intensity for better performance */
+.healthcare-glass-card {
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+}
+
+.healthcare-glass-hero {
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+}
+
+.healthcare-glass-overlay {
+  backdrop-filter: blur(6px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
+}
+
+/* Optimize transform animations */
+.healthcare-hover-premium:hover {
+  transform: translateY(-2px) !important;
+}
+
+.healthcare-hover-glow:hover {
+  transform: translateY(-1px) !important;
+}
+
+/* Reduce animation delays for faster loading */
+.healthcare-fade-up {
+  animation-duration: 0.6s !important;
+}
+
+/* Optimize scroll performance */
+* {
+  scroll-behavior: auto !important;
+}
+
+/* Reduce motion for better performance on lower-end devices */
+@media (max-width: 768px) {
+  .healthcare-glass-card,
+  .healthcare-glass-hero,
+  .healthcare-glass-overlay {
+    backdrop-filter: blur(4px) !important;
+    -webkit-backdrop-filter: blur(4px) !important;
+  }
+  
+  .healthcare-hover-premium:hover,
+  .healthcare-hover-glow:hover {
+    transform: none !important;
+  }
+  
+  .healthcare-fade-up {
+    animation: none !important;
+  }
+}
+
+/* GPU acceleration for smooth scrolling */
+.healthcare-glass-section,
+.healthcare-glass-card,
+.healthcare-glass-hero {
+  transform: translateZ(0) !important;
+  backface-visibility: hidden !important;
+}

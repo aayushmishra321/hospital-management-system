@@ -1,0 +1,1144 @@
+/* 🏥 PREMIUM HEALTHCARE GLASSMORPHISM STYLES */
+/* Hospital-grade, trustworthy, premium design with mountain aesthetics */
+
+/* Premium Full-Screen Healthcare Background System - Dark Images */
+.healthcare-mountain-bg {
+  background: 
+    linear-gradient(135deg, 
+      rgba(22, 160, 133, 0.3) 0%, 
+      rgba(72, 201, 176, 0.2) 25%,
+      rgba(163, 228, 215, 0.1) 50%,
+      rgba(213, 243, 236, 0.2) 75%,
+      rgba(248, 255, 254, 0.3) 100%
+    ),
+    linear-gradient(45deg, 
+      rgba(22, 160, 133, 0.15) 0%, 
+      transparent 50%,
+      rgba(72, 201, 176, 0.15) 100%
+    ),
+    url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1920&q=80&fm=webp') center/cover,
+    url('https://images.unsplash.com/photo-1504813184591-01572f98c85f?auto=format&fit=crop&w=1920&q=80&fm=webp') center/cover;
+  background-attachment: fixed;
+  background-blend-mode: overlay, normal, normal, normal;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Healthcare Background Variants - Same as Home page for consistency */
+.healthcare-mountain-bg-alt1 {
+  background: 
+    linear-gradient(135deg, 
+      rgba(22, 160, 133, 0.3) 0%, 
+      rgba(72, 201, 176, 0.2) 25%,
+      rgba(163, 228, 215, 0.1) 50%,
+      rgba(213, 243, 236, 0.2) 75%,
+      rgba(248, 255, 254, 0.3) 100%
+    ),
+    linear-gradient(45deg, 
+      rgba(22, 160, 133, 0.15) 0%, 
+      transparent 50%,
+      rgba(72, 201, 176, 0.15) 100%
+    ),
+    url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1920&q=80&fm=webp') center/cover,
+    url('https://images.unsplash.com/photo-1504813184591-01572f98c85f?auto=format&fit=crop&w=1920&q=80&fm=webp') center/cover;
+  background-attachment: fixed;
+  background-blend-mode: overlay, normal, normal, normal;
+  position: relative;
+  min-height: 100vh;
+}
+
+.healthcare-mountain-bg-alt2 {
+  background: 
+    linear-gradient(135deg, 
+      rgba(22, 160, 133, 0.3) 0%, 
+      rgba(72, 201, 176, 0.2) 25%,
+      rgba(163, 228, 215, 0.1) 50%,
+      rgba(213, 243, 236, 0.2) 75%,
+      rgba(248, 255, 254, 0.3) 100%
+    ),
+    linear-gradient(45deg, 
+      rgba(22, 160, 133, 0.15) 0%, 
+      transparent 50%,
+      rgba(72, 201, 176, 0.15) 100%
+    ),
+    url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1920&q=80&fm=webp') center/cover,
+    url('https://images.unsplash.com/photo-1504813184591-01572f98c85f?auto=format&fit=crop&w=1920&q=80&fm=webp') center/cover;
+  background-attachment: fixed;
+  background-blend-mode: overlay, normal, normal, normal;
+  position: relative;
+  min-height: 100vh;
+}
+
+.healthcare-mountain-bg-alt3 {
+  background: 
+    linear-gradient(135deg, 
+      rgba(22, 160, 133, 0.3) 0%, 
+      rgba(72, 201, 176, 0.2) 25%,
+      rgba(163, 228, 215, 0.1) 50%,
+      rgba(213, 243, 236, 0.2) 75%,
+      rgba(248, 255, 254, 0.3) 100%
+    ),
+    linear-gradient(45deg, 
+      rgba(22, 160, 133, 0.15) 0%, 
+      transparent 50%,
+      rgba(72, 201, 176, 0.15) 100%
+    ),
+    url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1920&q=80&fm=webp') center/cover,
+    url('https://images.unsplash.com/photo-1504813184591-01572f98c85f?auto=format&fit=crop&w=1920&q=80&fm=webp') center/cover;
+  background-attachment: fixed;
+  background-blend-mode: overlay, normal, normal, normal;
+  position: relative;
+  min-height: 100vh;
+}
+
+.healthcare-mountain-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 25% 25%, rgba(22, 160, 133, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(72, 201, 176, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(163, 228, 215, 0.015) 0%, transparent 70%),
+    radial-gradient(circle at 80% 20%, rgba(213, 243, 236, 0.01) 0%, transparent 60%),
+    radial-gradient(circle at 20% 80%, rgba(248, 255, 254, 0.015) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.healthcare-mountain-bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(180deg, 
+      rgba(248, 255, 254, 0.04) 0%, 
+      rgba(213, 243, 236, 0.02) 25%,
+      rgba(163, 228, 215, 0.01) 50%,
+      rgba(72, 201, 176, 0.02) 75%,
+      rgba(22, 160, 133, 0.04) 100%
+    ),
+    linear-gradient(90deg, 
+      rgba(22, 160, 133, 0.01) 0%, 
+      transparent 25%,
+      transparent 75%,
+      rgba(72, 201, 176, 0.01) 100%
+    );
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Ultra Premium Glass Components - Reduced Blur for Realism */
+.healthcare-glass-ultra {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 28px;
+  box-shadow: 
+    0 25px 80px rgba(0, 0, 0, 0.15),
+    0 12px 40px rgba(255, 255, 255, 0.3) inset,
+    0 3px 0 rgba(255, 255, 255, 0.6) inset,
+    0 0 0 1px rgba(255, 255, 255, 0.2) inset;
+  position: relative;
+  z-index: 10;
+}
+
+.healthcare-glass-premium {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 24px;
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.12),
+    0 8px 32px rgba(255, 255, 255, 0.25) inset,
+    0 2px 0 rgba(255, 255, 255, 0.5) inset,
+    0 0 0 1px rgba(255, 255, 255, 0.15) inset;
+  position: relative;
+  z-index: 10;
+}
+
+.healthcare-glass-hero {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 32px;
+  box-shadow: 
+    0 30px 100px rgba(0, 0, 0, 0.2),
+    0 15px 50px rgba(255, 255, 255, 0.35) inset,
+    0 4px 0 rgba(255, 255, 255, 0.6) inset,
+    0 0 0 1px rgba(255, 255, 255, 0.25) inset;
+  position: relative;
+  z-index: 10;
+}
+
+.healthcare-glass-card {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 20px;
+  box-shadow: 
+    0 15px 50px rgba(0, 0, 0, 0.1),
+    0 6px 20px rgba(255, 255, 255, 0.2) inset,
+    0 1px 0 rgba(255, 255, 255, 0.4) inset;
+  position: relative;
+  z-index: 10;
+}
+
+.healthcare-glass-nav {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 
+    0 10px 40px rgba(0, 0, 0, 0.06),
+    0 3px 0 rgba(255, 255, 255, 0.35) inset,
+    0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+  position: relative;
+  z-index: 50;
+}
+
+/* Full Glass Effect Sections - Reduced Blur for Realism */
+.healthcare-glass-section {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 24px;
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.08),
+    0 4px 16px rgba(255, 255, 255, 0.2) inset;
+  position: relative;
+  z-index: 5;
+}
+
+.healthcare-glass-overlay {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  position: relative;
+  z-index: 3;
+}
+
+/* Enhanced Text Visibility - CLEAN MINIMALISTIC STYLE */
+.healthcare-text-enhanced {
+  color: rgba(31, 41, 55, 1) !important;
+  text-shadow: none !important;
+  font-weight: 400;
+}
+
+.healthcare-heading-enhanced {
+  color: rgba(17, 24, 39, 1) !important;
+  text-shadow: none !important;
+  font-weight: 700;
+}
+
+.healthcare-body-enhanced {
+  color: rgba(55, 65, 81, 1) !important;
+  text-shadow: none !important;
+  font-weight: 400;
+}
+
+/* Core Glassmorphism Components - Reduced Blur for Realism */
+.healthcare-glass {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06), 
+              0 2px 8px rgba(255, 255, 255, 0.2) inset;
+}
+
+.healthcare-glass-subtle {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04),
+              0 1px 4px rgba(255, 255, 255, 0.15) inset;
+}
+
+.healthcare-glass-strong {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 24px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08),
+              0 3px 12px rgba(255, 255, 255, 0.22) inset;
+}
+
+/* Enhanced Glass Variants - More Transparent */
+.healthcare-glass-ultra {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 28px;
+  box-shadow: 0 16px 56px rgba(0, 0, 0, 0.1),
+              0 4px 16px rgba(255, 255, 255, 0.15) inset,
+              0 1px 0 rgba(255, 255, 255, 0.3) inset;
+}
+
+.healthcare-glass-hero {
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 24px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.06),
+              0 2px 12px rgba(255, 255, 255, 0.1) inset,
+              0 1px 0 rgba(255, 255, 255, 0.25) inset;
+}
+
+.healthcare-glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(0, 0, 0, 0.05),
+              0 2px 8px rgba(255, 255, 255, 0.08) inset;
+}
+
+/* Natural Healthcare Color Palette */
+:root {
+  --healthcare-primary: #16a085;
+  --healthcare-secondary: #138d75;
+  --healthcare-accent: #48c9b0;
+  --healthcare-success: #27ae60;
+  --healthcare-warning: #f39c12;
+  --healthcare-error: #e74c3c;
+  --healthcare-neutral: #5d6d7e;
+  --healthcare-light: #fdfefe;
+  --healthcare-dark: #2c3e50;
+  --healthcare-sage: #95a5a6;
+  --healthcare-mint: #a3e4d7;
+  --healthcare-forest: #1e8449;
+}
+
+/* Natural Background Gradients */
+.healthcare-bg-primary {
+  background: linear-gradient(135deg, #f8fffe 0%, #eaf7f4 25%, #d5f3ec 50%, #eaf7f4 75%, #f8fffe 100%);
+  position: relative;
+}
+
+.healthcare-bg-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 80%, rgba(22, 160, 133, 0.02) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(72, 201, 176, 0.02) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.healthcare-bg-secondary {
+  background: linear-gradient(135deg, #fdfefe 0%, #f4f6f6 25%, #eaeded 50%, #f4f6f6 75%, #fdfefe 100%);
+  position: relative;
+}
+
+.healthcare-bg-secondary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 40%, rgba(93, 109, 126, 0.015) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.healthcare-bg-hero {
+  background: linear-gradient(135deg, #f8fffe 0%, #eaf7f4 20%, #d5f3ec 40%, #c3f0e8 60%, #d5f3ec 80%, #f8fffe 100%);
+  position: relative;
+}
+
+.healthcare-bg-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 25% 25%, rgba(22, 160, 133, 0.025) 0%, transparent 50%),
+              radial-gradient(circle at 75% 75%, rgba(72, 201, 176, 0.025) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Professional Typography */
+.healthcare-heading {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 600;
+  color: var(--healthcare-dark);
+  line-height: 1.2;
+}
+
+.healthcare-subheading {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 500;
+  color: var(--healthcare-neutral);
+  line-height: 1.4;
+}
+
+.healthcare-body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
+  color: var(--healthcare-neutral);
+  line-height: 1.6;
+}
+
+/* Premium Healthcare Animations */
+@keyframes healthcare-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes healthcare-float-delayed {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes healthcare-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(22, 160, 133, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(22, 160, 133, 0.6);
+  }
+}
+
+@keyframes healthcare-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes healthcare-scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.healthcare-float {
+  animation: healthcare-float 6s ease-in-out infinite;
+}
+
+.healthcare-float-delayed {
+  animation: healthcare-float-delayed 8s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.healthcare-glow {
+  animation: healthcare-glow 3s ease-in-out infinite;
+}
+
+.healthcare-slide-up {
+  animation: healthcare-slide-up 0.8s ease-out forwards;
+}
+
+.healthcare-scale-in {
+  animation: healthcare-scale-in 0.6s ease-out forwards;
+}
+
+/* Premium Hover Effects */
+.healthcare-hover-premium {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.healthcare-hover-premium:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12),
+              0 8px 24px rgba(255, 255, 255, 0.15) inset;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.healthcare-hover-glow-premium {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.healthcare-hover-glow-premium:hover {
+  box-shadow: 0 12px 40px rgba(22, 160, 133, 0.2),
+              0 4px 16px rgba(255, 255, 255, 0.12) inset;
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-4px);
+}
+
+.healthcare-interactive-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.healthcare-interactive-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.healthcare-interactive-card:active {
+  transform: translateY(-3px) scale(1.01);
+}
+
+/* Premium Healthcare Buttons */
+.healthcare-btn-premium {
+  background: linear-gradient(135deg, var(--healthcare-primary), var(--healthcare-secondary));
+  color: white;
+  padding: 14px 28px;
+  border-radius: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 24px rgba(22, 160, 133, 0.3),
+              0 2px 8px rgba(255, 255, 255, 0.1) inset;
+  position: relative;
+  overflow: hidden;
+}
+
+.healthcare-btn-premium::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.healthcare-btn-premium:hover::before {
+  left: 100%;
+}
+
+.healthcare-btn-premium:hover {
+  background: linear-gradient(135deg, var(--healthcare-secondary), var(--healthcare-forest));
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(22, 160, 133, 0.4),
+              0 4px 12px rgba(255, 255, 255, 0.15) inset;
+}
+
+.healthcare-btn-secondary-premium {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  color: var(--healthcare-primary);
+  padding: 14px 28px;
+  border-radius: 14px;
+  font-weight: 600;
+  border: 2px solid rgba(22, 160, 133, 0.3);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.healthcare-btn-secondary-premium:hover {
+  background: var(--healthcare-primary);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(22, 160, 133, 0.3);
+}
+
+/* Trust Indicators - Natural */
+.healthcare-trust-badge {
+  background: rgba(39, 174, 96, 0.08);
+  color: var(--healthcare-success);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid rgba(39, 174, 96, 0.15);
+}
+
+/* Service Cards - Enhanced Visibility */
+.healthcare-service-card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 28px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05),
+              0 2px 8px rgba(255, 255, 255, 0.15) inset;
+}
+
+.healthcare-service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.08),
+              0 4px 16px rgba(255, 255, 255, 0.2) inset;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+/* Stats Cards - Enhanced Visibility */
+.healthcare-stat-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.04),
+              0 1px 4px rgba(255, 255, 255, 0.15) inset;
+}
+
+.healthcare-stat-card:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-3px);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+}
+
+/* Form Styles - Enhanced Visibility with proper input styling */
+.healthcare-form {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 24px;
+  padding: 36px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06),
+              0 2px 12px rgba(255, 255, 255, 0.2) inset;
+}
+
+.healthcare-input {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 12px;
+  padding: 14px 18px;
+  width: 100%;
+  font-size: 16px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.02) inset;
+  color: rgba(31, 41, 55, 1);
+}
+
+.healthcare-input:focus {
+  outline: none;
+  border-color: var(--healthcare-primary);
+  box-shadow: 0 0 0 3px rgba(22, 160, 133, 0.1),
+              0 1px 4px rgba(0, 0, 0, 0.02) inset;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.healthcare-input::placeholder {
+  color: rgba(75, 85, 99, 0.7);
+}
+
+/* Login/Register page specific input styling - BLACK TEXT */
+.healthcare-input.text-white {
+  color: rgba(31, 41, 55, 1) !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: 1px solid rgba(209, 213, 219, 1) !important;
+}
+
+.healthcare-input.text-white::placeholder {
+  color: rgba(107, 114, 128, 0.7) !important;
+}
+
+.healthcare-input.text-white:focus {
+  background: rgba(255, 255, 255, 1) !important;
+  border-color: rgba(22, 160, 133, 1) !important;
+  box-shadow: 0 0 0 3px rgba(22, 160, 133, 0.1) !important;
+  color: rgba(31, 41, 55, 1) !important;
+}
+
+/* Premium Healthcare Navbar - Reduced Blur for Realism */
+.healthcare-navbar-premium {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.08),
+    0 2px 0 rgba(255, 255, 255, 0.5) inset,
+    0 0 0 1px rgba(255, 255, 255, 0.15) inset;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.healthcare-navbar-premium.scrolled {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.12),
+    0 3px 0 rgba(255, 255, 255, 0.6) inset,
+    0 0 0 1px rgba(255, 255, 255, 0.2) inset;
+}
+
+.healthcare-logo-premium {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.healthcare-logo-premium::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.6s;
+}
+
+.healthcare-logo-premium:hover::before {
+  left: 100%;
+}
+
+.healthcare-logo-premium:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
+  box-shadow: 
+    0 8px 25px rgba(0, 0, 0, 0.1),
+    0 2px 8px rgba(255, 255, 255, 0.1) inset;
+}
+
+.healthcare-logo-image {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.healthcare-logo-premium:hover .healthcare-logo-image {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 4px 12px rgba(22, 160, 133, 0.3);
+}
+
+.healthcare-logo-fallback {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #16a085, #138d75);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(22, 160, 133, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.healthcare-logo-premium:hover .healthcare-logo-fallback {
+  transform: scale(1.1) rotate(-5deg);
+  box-shadow: 0 6px 20px rgba(22, 160, 133, 0.4);
+}
+
+.healthcare-logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.healthcare-logo-title {
+  font-size: 24px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #16a085, #138d75, #48c9b0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.healthcare-logo-premium:hover .healthcare-logo-title {
+  background: linear-gradient(135deg, #138d75, #16a085, #27ae60);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.healthcare-logo-tagline {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(22, 160, 133, 0.8);
+  line-height: 1.2;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.healthcare-logo-premium:hover .healthcare-logo-tagline {
+  color: rgba(22, 160, 133, 1);
+}
+
+/* Premium Navigation Links - Clean Minimalistic Style */
+.healthcare-nav-link {
+  position: relative;
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-weight: 600;
+  color: rgba(17, 24, 39, 1);
+  text-shadow: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.healthcare-nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #16a085, #48c9b0);
+  border-radius: 1px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(-50%);
+}
+
+.healthcare-nav-link:hover {
+  color: #16a085;
+  background: rgba(22, 160, 133, 0.08);
+  border-color: rgba(22, 160, 133, 0.15);
+  transform: translateY(-1px);
+}
+
+.healthcare-nav-link:hover::before {
+  width: 100%;
+}
+
+.healthcare-nav-link.active {
+  color: #16a085;
+  background: rgba(22, 160, 133, 0.12);
+  border-color: rgba(22, 160, 133, 0.2);
+}
+
+.healthcare-nav-link.active::before {
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .healthcare-glass,
+  .healthcare-glass-subtle,
+  .healthcare-glass-strong {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  
+  .healthcare-service-card {
+    padding: 20px;
+  }
+  
+  .healthcare-form {
+    padding: 24px;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .healthcare-fade-up,
+  .healthcare-float,
+  .healthcare-hover-lift,
+  .healthcare-hover-glow {
+    animation: none;
+    transition: none;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .healthcare-glass,
+  .healthcare-glass-subtle,
+  .healthcare-glass-strong {
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Print Styles */
+@media print {
+  .healthcare-glass,
+  .healthcare-glass-subtle,
+  .healthcare-glass-strong {
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: none;
+  }
+}
+
+/* MINIMALISTIC VISIBILITY FIXES FOR CARD CONTENT */
+
+/* Enhanced visibility for all card text content - clean style */
+.healthcare-glass-card p,
+.healthcare-glass-card span,
+.healthcare-glass-card div,
+.healthcare-service-card p,
+.healthcare-service-card span,
+.healthcare-service-card div,
+.healthcare-glass-hero p,
+.healthcare-glass-hero span,
+.healthcare-glass-hero div,
+.healthcare-glass-overlay p,
+.healthcare-glass-overlay span,
+.healthcare-glass-overlay div {
+  color: rgba(31, 41, 55, 1) !important;
+  text-shadow: none !important;
+}
+
+/* Enhanced visibility for all card headings - clean style */
+.healthcare-glass-card h1,
+.healthcare-glass-card h2,
+.healthcare-glass-card h3,
+.healthcare-glass-card h4,
+.healthcare-glass-card h5,
+.healthcare-glass-card h6,
+.healthcare-service-card h1,
+.healthcare-service-card h2,
+.healthcare-service-card h3,
+.healthcare-service-card h4,
+.healthcare-service-card h5,
+.healthcare-service-card h6,
+.healthcare-glass-hero h1,
+.healthcare-glass-hero h2,
+.healthcare-glass-hero h3,
+.healthcare-glass-hero h4,
+.healthcare-glass-hero h5,
+.healthcare-glass-hero h6,
+.healthcare-glass-overlay h1,
+.healthcare-glass-overlay h2,
+.healthcare-glass-overlay h3,
+.healthcare-glass-overlay h4,
+.healthcare-glass-overlay h5,
+.healthcare-glass-overlay h6 {
+  color: rgba(17, 24, 39, 1) !important;
+  text-shadow: none !important;
+  font-weight: 700 !important;
+}
+
+/* Enhanced visibility for buttons inside cards */
+.healthcare-glass-card button,
+.healthcare-service-card button,
+.healthcare-glass-hero button,
+.healthcare-glass-overlay button {
+  background: rgba(22, 160, 133, 0.9) !important;
+  color: white !important;
+  border: 1px solid rgba(22, 160, 133, 1) !important;
+  text-shadow: none !important;
+}
+
+.healthcare-glass-card button:hover,
+.healthcare-service-card button:hover,
+.healthcare-glass-hero button:hover,
+.healthcare-glass-overlay button:hover {
+  background: rgba(22, 160, 133, 1) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Enhanced visibility for links inside cards - clean style */
+.healthcare-glass-card a,
+.healthcare-service-card a,
+.healthcare-glass-hero a,
+.healthcare-glass-overlay a {
+  color: rgba(22, 160, 133, 1) !important;
+  text-shadow: none !important;
+  font-weight: 600 !important;
+}
+
+.healthcare-glass-card a:hover,
+.healthcare-service-card a:hover,
+.healthcare-glass-hero a:hover,
+.healthcare-glass-overlay a:hover {
+  color: rgba(19, 78, 74, 1) !important;
+  text-decoration: underline !important;
+}
+
+/* Enhanced visibility for icons inside cards - clean style */
+.healthcare-glass-card svg,
+.healthcare-service-card svg,
+.healthcare-glass-hero svg,
+.healthcare-glass-overlay svg {
+  filter: none;
+}
+
+/* Enhanced visibility for form elements - clean style */
+.healthcare-form label {
+  color: rgba(17, 24, 39, 1) !important;
+  text-shadow: none !important;
+  font-weight: 600 !important;
+}
+
+/* Enhanced visibility for breadcrumbs - clean style */
+.healthcare-body {
+  color: rgba(55, 65, 81, 1) !important;
+  text-shadow: none !important;
+}
+
+/* Enhanced visibility for stats and numbers - clean style */
+.healthcare-stat-card .text-3xl,
+.healthcare-glass-card .text-3xl,
+.healthcare-service-card .text-3xl {
+  color: rgba(17, 24, 39, 1) !important;
+  text-shadow: none !important;
+  font-weight: 700 !important;
+}
+
+/* Enhanced visibility for small text - clean style */
+.healthcare-glass-card .text-sm,
+.healthcare-service-card .text-sm,
+.healthcare-glass-hero .text-sm,
+.healthcare-glass-overlay .text-sm {
+  color: rgba(75, 85, 99, 1) !important;
+  text-shadow: none !important;
+  font-weight: 400 !important;
+}
+
+/* Enhanced visibility for feature lists - clean style */
+.healthcare-glass-card ul li,
+.healthcare-service-card ul li,
+.healthcare-glass-hero ul li,
+.healthcare-glass-overlay ul li {
+  color: rgba(55, 65, 81, 1) !important;
+  text-shadow: none !important;
+}
+
+/* Enhanced visibility for checkmarks and icons - clean style */
+.text-green-500,
+.text-green-600 {
+  filter: none !important;
+}
+
+.text-teal-600,
+.text-teal-700 {
+  filter: none !important;
+}
+
+.text-blue-600,
+.text-blue-700 {
+  filter: none !important;
+}
+
+/* Enhanced visibility for contact form specific elements */
+.healthcare-form input,
+.healthcare-form textarea,
+.healthcare-form select {
+  color: rgba(31, 41, 55, 1) !important;
+  font-weight: 500 !important;
+}
+
+.healthcare-form input::placeholder,
+.healthcare-form textarea::placeholder {
+  color: rgba(107, 114, 128, 0.8) !important;
+}
+
+/* Enhanced visibility for emergency alerts - clean style */
+.border-red-500,
+.border-red-200 {
+  background: rgba(254, 242, 242, 0.9) !important;
+}
+
+.text-red-800,
+.text-red-700,
+.text-red-600 {
+  text-shadow: none !important;
+}
+
+/* Enhanced visibility for trust indicators - clean style */
+.text-green-400 {
+  filter: none !important;
+}
+
+/* Enhanced visibility for footer content - ALL WHITE TEXT */
+footer .healthcare-glass-hero p,
+footer .healthcare-glass-hero span,
+footer .healthcare-glass-hero div,
+footer .text-gray-300,
+footer .text-gray-400,
+footer .text-teal-400 {
+  color: rgba(255, 255, 255, 1) !important;
+  text-shadow: none !important;
+}
+
+footer .healthcare-glass-hero h3,
+footer .healthcare-glass-hero h4,
+footer .text-white {
+  color: rgba(255, 255, 255, 1) !important;
+  text-shadow: none !important;
+}
+
+/* Force visibility for all footer elements - ALL WHITE TEXT */
+footer * {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+/* Enhanced visibility for mobile menu */
+@media (max-width: 1024px) {
+  .healthcare-glass-card {
+    background: rgba(255, 255, 255, 0.4) !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+  }
+  
+  .healthcare-nav-link {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  }
+}
+
+/* Fallback for browsers that don't support backdrop-filter */
+@supports not (backdrop-filter: blur(20px)) {
+  .healthcare-glass-card,
+  .healthcare-service-card,
+  .healthcare-glass-hero,
+  .healthcare-glass-overlay {
+    background: rgba(255, 255, 255, 0.85) !important;
+  }
+}

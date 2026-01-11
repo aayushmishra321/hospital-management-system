@@ -1,0 +1,176 @@
+/* Notification Dropdown Override Styles */
+/* Force high contrast and readability for notification dropdown */
+
+.notification-dropdown-override {
+  background: #ffffff !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  color: #000000 !important;
+}
+
+.notification-dropdown-override *,
+.notification-dropdown-override *::before,
+.notification-dropdown-override *::after {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+
+.notification-dropdown-override .notification-header {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+.notification-dropdown-override .notification-title {
+  color: #000000 !important;
+  font-weight: 700 !important;
+  text-shadow: none !important;
+}
+
+.notification-dropdown-override .notification-message {
+  color: #1f2937 !important;
+  font-weight: 500 !important;
+  text-shadow: none !important;
+}
+
+.notification-dropdown-override .notification-time {
+  color: #4b5563 !important;
+  font-weight: 500 !important;
+  text-shadow: none !important;
+}
+
+.notification-dropdown-override .notification-item {
+  background: #ffffff !important;
+}
+
+.notification-dropdown-override .notification-item.unread {
+  background: #f0f9ff !important;
+  border-left: 4px solid #3b82f6 !important;
+}
+
+.notification-dropdown-override .notification-item:hover {
+  background: #f9fafb !important;
+}
+
+.notification-dropdown-override .notification-icon {
+  border: 1px solid #d1d5db !important;
+}
+
+.notification-dropdown-override .notification-button {
+  color: #6b7280 !important;
+}
+
+.notification-dropdown-override .notification-button:hover {
+  background: #f3f4f6 !important;
+}
+
+.notification-dropdown-override .notification-button.primary {
+  color: #1d4ed8 !important;
+}
+
+.notification-dropdown-override .notification-button.primary:hover {
+  background: #eff6ff !important;
+}
+
+.notification-dropdown-override .notification-button.danger:hover {
+  color: #dc2626 !important;
+  background: #fef2f2 !important;
+}
+
+.notification-dropdown-override .notification-priority-urgent {
+  background: #dc2626 !important;
+  color: #ffffff !important;
+}
+
+.notification-dropdown-override .notification-priority-high {
+  background: #ea580c !important;
+  color: #ffffff !important;
+}
+
+/* Override any glassmorphism effects aggressively */
+.notification-dropdown-override,
+.notification-dropdown-override * {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Ensure text is always readable with maximum contrast */
+.notification-dropdown-override h1,
+.notification-dropdown-override h2,
+.notification-dropdown-override h3,
+.notification-dropdown-override h4,
+.notification-dropdown-override h5,
+.notification-dropdown-override h6 {
+  color: #000000 !important;
+  text-shadow: none !important;
+  font-weight: 700 !important;
+}
+
+.notification-dropdown-override p {
+  color: #1f2937 !important;
+  text-shadow: none !important;
+}
+
+.notification-dropdown-override span {
+  color: inherit !important;
+  text-shadow: none !important;
+}
+
+/* Force solid backgrounds with maximum opacity */
+.notification-dropdown-override .bg-white {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+}
+
+.notification-dropdown-override .bg-gray-50 {
+  background-color: #f9fafb !important;
+  background: #f9fafb !important;
+}
+
+.notification-dropdown-override .bg-blue-50 {
+  background-color: #eff6ff !important;
+  background: #eff6ff !important;
+}
+
+/* Remove any transparency or opacity effects */
+.notification-dropdown-override * {
+  opacity: 1 !important;
+}
+
+/* Ensure borders are visible */
+.notification-dropdown-override .border {
+  border-color: #e5e7eb !important;
+}
+
+.notification-dropdown-override .border-gray-200 {
+  border-color: #e5e7eb !important;
+}
+
+.notification-dropdown-override .border-gray-300 {
+  border-color: #d1d5db !important;
+}
+
+/* Force text colors for all text elements */
+.notification-dropdown-override .text-gray-900 {
+  color: #000000 !important;
+}
+
+.notification-dropdown-override .text-gray-800 {
+  color: #1f2937 !important;
+}
+
+.notification-dropdown-override .text-gray-700 {
+  color: #374151 !important;
+}
+
+.notification-dropdown-override .text-gray-600 {
+  color: #4b5563 !important;
+}
+
+.notification-dropdown-override .text-gray-500 {
+  color: #6b7280 !important;
+}
+
+.notification-dropdown-override .text-blue-600 {
+  color: #1d4ed8 !important;
+}
