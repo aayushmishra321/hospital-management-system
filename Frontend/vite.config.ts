@@ -5,27 +5,36 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [
-    // The React and Tailwind plugins are both required for Make, even if
-    // Tailwind is not being actively used – do not remove them
     react(),
     tailwindcss(),
   ],
   resolve: {
     alias: {
-      // Alias @ to the src directory
       '@': path.resolve(__dirname, './src'),
     },
   },
   // Ensure environment variables are properly loaded
   envPrefix: 'VITE_',
-  define: {
-    // Force define API URL for production builds
-    __HOSPITAL_API_URL__: JSON.stringify(process.env.VITE_API_URL || 'https://hospital-backend-zvjt.onrender.com/api'),
-  },
+  // Production-specific configuration
   build: {
-    // Ensure environment variables are included in build
+    sourcemap: false, // Disable source maps in production
     rollupOptions: {
-      external: [],
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          axios: ['axios'],
+        },
+      },
     },
+  },
+  // Development server configuration
+  server: {
+    port: 5174,
+    host: true,
+  },
+  // Preview server configuration (for production testing)
+  preview: {
+    port: 4173,
+    host: true,
   },
 })
