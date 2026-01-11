@@ -2,6 +2,7 @@ import { useState, useEffect, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AdminContext } from '../../context/AdminContext';
 import { getRoleDashboardImage, getLegacyImage } from '../../utils/unsplashImages';
+import api from '../../services/api';
 import { 
   Users, 
   Stethoscope, 
@@ -59,7 +60,7 @@ export function AdminOverview() {
   const fetchSystemStatus = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:5001/api/admin/system-status', {
+      const response = await api.get('/admin/system-status', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setSystemStatus(response.data);
