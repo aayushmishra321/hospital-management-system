@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Environment Debug</title>
+</head>
+<body>
+    <h1>Environment Variables Debug</h1>
+    <div id="debug-info"></div>
+    
+    <script type="module">
+        const debugInfo = document.getElementById('debug-info');
+        
+        // Check if we're in production mode
+        const isProd = import.meta.env.PROD;
+        const apiUrl = import.meta.env.VITE_API_URL;
+        
+        debugInfo.innerHTML = `
+            <h2>Environment Check:</h2>
+            <p><strong>Production Mode:</strong> ${isProd}</p>
+            <p><strong>VITE_API_URL:</strong> ${apiUrl || 'NOT SET'}</p>
+            <p><strong>All Environment Variables:</strong></p>
+            <pre>${JSON.stringify(import.meta.env, null, 2)}</pre>
+            
+            <h2>Expected Values:</h2>
+            <p><strong>Should be:</strong> https://hospital-backend-zvjt.onrender.com/api</p>
+            
+            <h2>Test API Call:</h2>
+            <button onclick="testApiCall()">Test API Connection</button>
+            <div id="api-result"></div>
+        `;
+        
+        window.testApiCall = async () => {
+            const resultDiv = document.getElementById('api-result');
+            const testUrl = apiUrl || 'https://hospital-backend-zvjt.onrender.com/api';
+            
+            try {
+                resultDiv.innerHTML = '<p>Testing connection to: ' + testUrl + '</p>';
+                
+                const response = await fetch(testUrl + '/health');
+                const data = await response.json();
+                
+                resultDiv.innerHTML += '<p style="color: green;">✅ API Connection Successful!</p>';
+                resultDiv.innerHTML += '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+            } catch (error) {
+                resultDiv.innerHTML += '<p style="color: red;">❌ API Connection Failed: ' + error.message + '</p>';
+            }
+        };
+    </script>
+</body>
+</html>
