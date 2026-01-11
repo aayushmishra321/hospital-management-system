@@ -31,31 +31,42 @@ app.use(helmet({
 // CORS configuration for production
 const corsOptions = {
   origin: function (origin, callback) {
+    console.log('🌐 CORS Request from origin:', origin);
+    
     // Allow requests with no origin (like mobile apps or curl requests)
-    if (!origin) return callback(null, true);
+    if (!origin) {
+      console.log('✅ CORS: Allowing request with no origin');
+      return callback(null, true);
+    }
     
     const allowedOrigins = [
       'http://localhost:3000',
       'http://localhost:5173', 
       'http://localhost:5174',  // Vite dev server
       'http://localhost:3001',
-      'https://hospital-management-system-aayushmishra321s-projects.vercel.app', // Your Vercel domain
+      'https://hospital-management-system-aayushmishra321s-projects.vercel.app', // Your actual Vercel domain
       'https://hospital-management-system-git-main-aayushmishra321s-projects.vercel.app', // Vercel git domain
       'https://hospital-management-system-zvjt.vercel.app', // Vercel production domain
       process.env.CORS_ORIGIN,
       process.env.FRONTEND_URL
     ].filter(Boolean);
     
-    if (allowedOrigins.indexOf(origin) !== -1) {
+    // For production, also allow any vercel.app domain
+    const isVercelDomain = origin.includes('.vercel.app');
+    const isAllowedOrigin = allowedOrigins.indexOf(origin) !== -1;
+    
+    if (isAllowedOrigin || isVercelDomain) {
+      console.log('✅ CORS: Origin allowed');
       callback(null, true);
     } else {
-      console.log('CORS blocked origin:', origin);
+      console.log('❌ CORS blocked origin:', origin);
+      console.log('📋 Allowed origins:', allowedOrigins);
       callback(new Error('Not allowed by CORS'));
     }
   },
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
   optionsSuccessStatus: 200
 };
 
