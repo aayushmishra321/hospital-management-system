@@ -1,6 +1,7 @@
 import { useContext, useState } from 'react';
 import { AdminContext } from '../../context/AdminContext';
 import { AdvancedSearch } from '../shared/AdvancedSearch';
+import api from '../../services/api';
 import { 
   Search, 
   UserPlus, 
@@ -20,8 +21,6 @@ import {
   Plus,
   User
 } from 'lucide-react';
-import api from '../../services/api';
-import axios from 'axios';
 import { toast } from 'sonner';
 
 const patientQuotes = [
@@ -91,7 +90,6 @@ export function PatientManagement() {
   // Enhanced search functionality
   const handleAdvancedSearch = async (filters: any) => {
     try {
-      const token = localStorage.getItem('token');
       const queryParams = new URLSearchParams();
       
       Object.keys(filters).forEach(key => {
@@ -100,19 +98,9 @@ export function PatientManagement() {
         }
       });
 
-      const response = await fetch(`/api/search/patients?${queryParams.toString()}`, {
-        headers: {
-          'Authorization': `Bearer ${token}`
-        }
-      });
-
-      if (response.ok) {
-        const data = await response.json();
-        setSearchResults(data.results);
-        toast.success(`Found ${data.results.length} patients`);
-      } else {
-        toast.error('Search failed');
-      }
+      const response = await api.get(`/search/patients?${queryParams.toString()}`);
+      setSearchResults(response.data.results);
+      toast.success(`Found ${response.data.results.length} patients`);
     } catch (error) {
       console.error('Search error:', error);
       toast.error('Search error occurred');
@@ -152,11 +140,7 @@ export function PatientManagement() {
     setIsSubmitting(true);
 
     try {
-      const token = localStorage.getItem('token');
-      const response = await axios.post('http://localhost:5001/api/admin/patients', form, {
-        headers: { Authorization: `Bearer ${token}` }
-      });
-
+      const response = await api.post('/admin/patients', form);
       setPatients((prev: any) => [response.data.patient, ...prev]);
       toast.success('Patient added successfully');
       setShowAddModal(false);
@@ -194,7 +178,6 @@ export function PatientManagement() {
     setIsSubmitting(true);
 
     try {
-      const token = localStorage.getItem('token');
       const updateData = { ...form };
       
       // Remove password if empty
@@ -202,11 +185,7 @@ export function PatientManagement() {
         delete (updateData as any).password;
       }
 
-      const response = await axios.put(
-        `http://localhost:5001/api/admin/patients/${editingPatient._id}`, 
-        updateData,
-        { headers: { Authorization: `Bearer ${token}` } }
-      );
+      const response = await api.put(`/admin/patients/${editingPatient._id}`, updateData);
 
       setPatients((prev: any) => 
         prev.map((patient: any) => 
@@ -230,11 +209,7 @@ export function PatientManagement() {
     if (!confirm('Are you sure you want to delete this patient? This action cannot be undone.')) return;
     
     try {
-      const token = localStorage.getItem('token');
-      await axios.delete(`http://localhost:5001/api/admin/patients/${patientId}`, {
-        headers: { Authorization: `Bearer ${token}` }
-      });
-
+      await api.delete(`/admin/patients/${patientId}`);
       setPatients((prev: any) => prev.filter((p: any) => p._id !== patientId));
       toast.success('Patient deleted successfully');
     } catch (error: any) {
@@ -245,12 +220,7 @@ export function PatientManagement() {
   // NEW: Toggle Patient Status
   const handleToggleStatus = async (patientId: string) => {
     try {
-      const token = localStorage.getItem('token');
-      const response = await axios.patch(
-        `http://localhost:5001/api/admin/patients/${patientId}/status`,
-        {},
-        { headers: { Authorization: `Bearer ${token}` } }
-      );
+      const response = await api.patch(`/admin/patients/${patientId}/status`);
 
       setPatients((prev: any) => 
         prev.map((patient: any) => 
@@ -268,10 +238,7 @@ export function PatientManagement() {
   const handleViewDetails = async (patientId: string) => {
     try {
       console.log('🔍 Viewing patient details for ID:', patientId);
-      const token = localStorage.getItem('token');
-      const response = await axios.get(`http://localhost:5001/api/admin/patients/${patientId}`, {
-        headers: { Authorization: `Bearer ${token}` }
-      });
+      const response = await api.get(`/admin/patients/${patientId}`);
       
       // Ensure we have valid patient data
       if (response.data && typeof response.data === 'object') {

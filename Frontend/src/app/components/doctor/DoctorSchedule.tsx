@@ -140,31 +140,16 @@ export function DoctorSchedule() {
 
     setSaving(true);
     try {
-      const token = localStorage.getItem('token');
-      
-      const response = await fetch(`http://localhost:5001/api/schedule/doctor/${schedule.doctorId}`, {
-        method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`
-        },
-        body: JSON.stringify({
-          weeklySchedule: schedule.weeklySchedule,
-          preferences: schedule.preferences
-        })
+      const response = await api.put(`/schedule/doctor/${schedule.doctorId}`, {
+        weeklySchedule: schedule.weeklySchedule,
+        preferences: schedule.preferences
       });
 
-      if (response.ok) {
-        toast.success('Schedule updated successfully');
-        fetchSchedule(); // Refresh data
-      } else {
-        const errorData = await response.json();
-        console.error('Schedule update error:', errorData);
-        toast.error(errorData.message || 'Failed to update schedule');
-      }
-    } catch (error) {
+      toast.success('Schedule updated successfully');
+      fetchSchedule(); // Refresh data
+    } catch (error: any) {
       console.error('Error updating schedule:', error);
-      toast.error('Error updating schedule');
+      toast.error(error.response?.data?.message || 'Error updating schedule');
     } finally {
       setSaving(false);
     }
@@ -211,57 +196,30 @@ export function DoctorSchedule() {
     }
 
     try {
-      const token = localStorage.getItem('token');
+      const response = await api.post(`/schedule/doctor/${schedule?.doctorId}/exceptions`, newException);
       
-      const response = await fetch(`http://localhost:5001/api/schedule/doctor/${schedule?.doctorId}/exceptions`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`
-        },
-        body: JSON.stringify(newException)
+      toast.success('Exception added successfully');
+      setNewException({
+        date: '',
+        type: 'leave',
+        reason: '',
+        isFullDay: true
       });
-
-      if (response.ok) {
-        toast.success('Exception added successfully');
-        setNewException({
-          date: '',
-          type: 'leave',
-          reason: '',
-          isFullDay: true
-        });
-        fetchSchedule();
-      } else {
-        const error = await response.json();
-        toast.error(error.message || 'Failed to add exception');
-      }
-    } catch (error) {
+      fetchSchedule();
+    } catch (error: any) {
       console.error('Error adding exception:', error);
-      toast.error('Error adding exception');
+      toast.error(error.response?.data?.message || 'Error adding exception');
     }
   };
 
   const removeException = async (exceptionId: string) => {
     try {
-      const token = localStorage.getItem('token');
-      
-      const response = await fetch(`http://localhost:5001/api/schedule/doctor/${schedule?.doctorId}/exceptions/${exceptionId}`, {
-        method: 'DELETE',
-        headers: {
-          'Authorization': `Bearer ${token}`
-        }
-      });
-
-      if (response.ok) {
-        toast.success('Exception removed successfully');
-        fetchSchedule();
-      } else {
-        const errorData = await response.json();
-        toast.error(errorData.message || 'Failed to remove exception');
-      }
-    } catch (error) {
+      await api.delete(`/schedule/doctor/${schedule?.doctorId}/exceptions/${exceptionId}`);
+      toast.success('Exception removed successfully');
+      fetchSchedule();
+    } catch (error: any) {
       console.error('Error removing exception:', error);
-      toast.error('Error removing exception');
+      toast.error(error.response?.data?.message || 'Error removing exception');
     }
   };
 

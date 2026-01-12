@@ -5,6 +5,7 @@ import { CreditCard, DollarSign, User, Star, Shield, CheckCircle } from 'lucide-
 import { PaymentModal } from '../PaymentModal';
 import paymentService from '../../services/paymentService';
 import { formatCurrency } from '../../config/stripe';
+import api from '../../services/api';
 
 const paymentQuotes = [
   "Secure and timely payments ensure continued quality healthcare.",
@@ -92,45 +93,23 @@ export function PayBills() {
       }
       
       // Call the backend API to update payment status
-      const token = localStorage.getItem('token');
-      
-      if (!token) {
-        toast.error('Authentication required. Please login again.');
-        return;
-      }
-
-      const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001';
-      const response = await fetch(`${API_BASE_URL}/api/patient/billing/${billId}/pay`, {
-        method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`
-        },
-        body: JSON.stringify({
-          paymentMethod: paymentMethod,
-          notes: `Paid via ${paymentMethod} on ${new Date().toLocaleDateString()}`,
-          transactionId: `TXN-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`
-        })
+      const response = await api.put(`/patient/billing/${billId}/pay`, {
+        paymentMethod: paymentMethod,
+        notes: `Paid via ${paymentMethod} on ${new Date().toLocaleDateString()}`,
+        transactionId: `TXN-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`
       });
-
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.message || 'Payment processing failed');
-      }
-
-      const result = await response.json();
       
       // Update local state with the updated bill from backend
       setBilling(prev => prev.map(bill => 
-        bill._id === billId ? result.bill : bill
+        bill._id === billId ? response.data.bill : bill
       ));
       
       toast.success('Payment completed successfully!');
       setSelectedBill(null);
       setPaymentMethod('');
-    } catch (error) {
+    } catch (error: any) {
       console.error('Payment error:', error);
-      toast.error(error instanceof Error ? error.message : 'Payment failed. Please try again.');
+      toast.error(error.response?.data?.message || 'Payment failed. Please try again.');
     } finally {
       setIsProcessing(false);
     }

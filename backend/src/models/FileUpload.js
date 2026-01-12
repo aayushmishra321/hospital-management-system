@@ -84,7 +84,7 @@ fileUploadSchema.index({ createdAt: -1 });
 
 // Virtual for file URL
 fileUploadSchema.virtual('fullUrl').get(function() {
-  return `${process.env.BASE_URL || 'http://localhost:5001'}${this.url}`;
+  return `${process.env.BASE_URL || 'https://hospital-backend-zvjt.onrender.com'}${this.url}`;
 });
 
 // Method to check if file is image

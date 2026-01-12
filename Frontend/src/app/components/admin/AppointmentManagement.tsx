@@ -19,7 +19,6 @@ import {
   Search
 } from 'lucide-react';
 import api from '../../services/api';
-import axios from 'axios';
 import { toast } from 'sonner';
 
 const appointmentQuotes = [
@@ -171,10 +170,7 @@ export function AppointmentManagement() {
   const handleRefresh = async () => {
     setIsRefreshing(true);
     try {
-      const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:5001/api/admin/appointments', {
-        headers: { Authorization: `Bearer ${token}` }
-      });
+      const response = await api.get('/admin/appointments');
       setAppointments(response.data);
       toast.success('Appointments refreshed');
     } catch (error) {
@@ -190,11 +186,7 @@ export function AppointmentManagement() {
     setIsSubmitting(true);
 
     try {
-      const token = localStorage.getItem('token');
-      const response = await axios.post('http://localhost:5001/api/admin/appointments', form, {
-        headers: { Authorization: `Bearer ${token}` }
-      });
-
+      const response = await api.post('/admin/appointments', form);
       setAppointments((prev: any) => [response.data.appointment, ...prev]);
       toast.success('Appointment created successfully');
       setShowAddModal(false);
@@ -228,12 +220,7 @@ export function AppointmentManagement() {
     setIsSubmitting(true);
 
     try {
-      const token = localStorage.getItem('token');
-      const response = await axios.put(
-        `http://localhost:5001/api/admin/appointments/${editingAppointment._id}`, 
-        form,
-        { headers: { Authorization: `Bearer ${token}` } }
-      );
+      const response = await api.put(`/admin/appointments/${editingAppointment._id}`, form);
 
       setAppointments((prev: any) => 
         prev.map((appointment: any) => 
@@ -257,11 +244,7 @@ export function AppointmentManagement() {
     if (!confirm('Are you sure you want to delete this appointment? This action cannot be undone.')) return;
     
     try {
-      const token = localStorage.getItem('token');
-      await axios.delete(`http://localhost:5001/api/admin/appointments/${appointmentId}`, {
-        headers: { Authorization: `Bearer ${token}` }
-      });
-
+      await api.delete(`/admin/appointments/${appointmentId}`);
       setAppointments((prev: any) => prev.filter((a: any) => a._id !== appointmentId));
       toast.success('Appointment deleted successfully');
     } catch (error: any) {
@@ -272,12 +255,7 @@ export function AppointmentManagement() {
   // Check-in patient
   const handleCheckIn = async (appointmentId: string) => {
     try {
-      const token = localStorage.getItem('token');
-      const response = await axios.patch(
-        `http://localhost:5001/api/admin/appointments/${appointmentId}/checkin`,
-        {},
-        { headers: { Authorization: `Bearer ${token}` } }
-      );
+      const response = await api.patch(`/admin/appointments/${appointmentId}/checkin`);
 
       setAppointments((prev: any) => 
         prev.map((appointment: any) => 
@@ -294,12 +272,7 @@ export function AppointmentManagement() {
   // Mark as complete
   const handleComplete = async (appointmentId: string) => {
     try {
-      const token = localStorage.getItem('token');
-      const response = await axios.patch(
-        `http://localhost:5001/api/admin/appointments/${appointmentId}/complete`,
-        {},
-        { headers: { Authorization: `Bearer ${token}` } }
-      );
+      const response = await api.patch(`/admin/appointments/${appointmentId}/complete`);
 
       setAppointments((prev: any) => 
         prev.map((appointment: any) => 
@@ -330,12 +303,7 @@ export function AppointmentManagement() {
 
     setIsSubmitting(true);
     try {
-      const token = localStorage.getItem('token');
-      const response = await axios.patch(
-        `http://localhost:5001/api/admin/appointments/${selectedAppointment._id}/reschedule`,
-        rescheduleForm,
-        { headers: { Authorization: `Bearer ${token}` } }
-      );
+      const response = await api.patch(`/admin/appointments/${selectedAppointment._id}/reschedule`, rescheduleForm);
 
       setAppointments((prev: any) => 
         prev.map((appointment: any) => 
@@ -366,12 +334,7 @@ export function AppointmentManagement() {
 
     setIsSubmitting(true);
     try {
-      const token = localStorage.getItem('token');
-      const response = await axios.patch(
-        `http://localhost:5001/api/admin/appointments/${selectedAppointment._id}/cancel`,
-        { reason: cancelReason },
-        { headers: { Authorization: `Bearer ${token}` } }
-      );
+      const response = await api.patch(`/admin/appointments/${selectedAppointment._id}/cancel`, { reason: cancelReason });
 
       setAppointments((prev: any) => 
         prev.map((appointment: any) => 
@@ -393,10 +356,7 @@ export function AppointmentManagement() {
   // View appointment details
   const handleViewDetails = async (appointmentId: string) => {
     try {
-      const token = localStorage.getItem('token');
-      const response = await axios.get(`http://localhost:5001/api/admin/appointments/${appointmentId}`, {
-        headers: { Authorization: `Bearer ${token}` }
-      });
+      const response = await api.get(`/admin/appointments/${appointmentId}`);
       setSelectedAppointment(response.data);
       setShowDetailModal(true);
     } catch (error: any) {

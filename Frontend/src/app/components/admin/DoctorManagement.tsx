@@ -4,7 +4,6 @@ import { Search, Plus, Trash2, Mail, Stethoscope, Star, Edit, Eye, ToggleLeft, T
 import { toast } from 'sonner';
 import api from '../../services/api';
 import { getDepartmentImage } from '../../utils/departmentImages';
-import axios from 'axios';
 
 const doctorQuotes = [
   "Doctors are the backbone of healthcare excellence.",
@@ -79,11 +78,7 @@ export function DoctorManagement() {
     setIsSubmitting(true);
 
     try {
-      const token = localStorage.getItem('token');
-      const response = await axios.post('http://localhost:5001/api/admin/doctors', form, {
-        headers: { Authorization: `Bearer ${token}` }
-      });
-
+      const response = await api.post('/admin/doctors', form);
       setDoctors((prev: any) => [response.data.doctor, ...prev]);
       toast.success('Doctor added successfully');
       setShowModal(false);
@@ -122,7 +117,6 @@ export function DoctorManagement() {
     setIsSubmitting(true);
 
     try {
-      const token = localStorage.getItem('token');
       const updateData = { ...form };
       
       // Remove password if empty (don't update password)
@@ -130,11 +124,7 @@ export function DoctorManagement() {
         delete (updateData as any).password;
       }
 
-      const response = await axios.put(
-        `http://localhost:5001/api/admin/doctors/${editingDoctor?._id}`, 
-        updateData,
-        { headers: { Authorization: `Bearer ${token}` } }
-      );
+      const response = await api.put(`/admin/doctors/${editingDoctor?._id}`, updateData);
 
       // Update the doctors list
       setDoctors((prev: any) => 
@@ -159,11 +149,7 @@ export function DoctorManagement() {
     if (!confirm('Are you sure you want to delete this doctor? This action cannot be undone.')) return;
     
     try {
-      const token = localStorage.getItem('token');
-      await axios.delete(`http://localhost:5001/api/admin/doctors/${doctorId}`, {
-        headers: { Authorization: `Bearer ${token}` }
-      });
-
+      await api.delete(`/admin/doctors/${doctorId}`);
       setDoctors((prev: any) => prev.filter((d: any) => d._id !== doctorId));
       toast.success('Doctor deleted successfully');
     } catch (error: any) {
@@ -174,12 +160,7 @@ export function DoctorManagement() {
   // NEW: Handle Toggle Doctor Status
   const handleToggleStatus = async (doctorId: string) => {
     try {
-      const token = localStorage.getItem('token');
-      const response = await axios.patch(
-        `http://localhost:5001/api/admin/doctors/${doctorId}/status`,
-        {},
-        { headers: { Authorization: `Bearer ${token}` } }
-      );
+      const response = await api.patch(`/admin/doctors/${doctorId}/status`);
 
       // Update the doctors list
       setDoctors((prev: any) => 
@@ -197,10 +178,7 @@ export function DoctorManagement() {
   // NEW: Handle View Doctor Details
   const handleViewDetails = async (doctorId: string) => {
     try {
-      const token = localStorage.getItem('token');
-      const response = await axios.get(`http://localhost:5001/api/admin/doctors/${doctorId}`, {
-        headers: { Authorization: `Bearer ${token}` }
-      });
+      const response = await api.get(`/admin/doctors/${doctorId}`);
       setSelectedDoctor(response.data);
       setShowDetailModal(true);
     } catch (error: any) {

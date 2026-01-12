@@ -2,6 +2,7 @@ import { useContext, useState } from 'react';
 import { toast } from 'sonner';
 import { ReceptionistContext } from '../../context/ReceptionistContext';
 import { UserPlus, Heart, Sparkles, Search, Eye, EyeOff } from 'lucide-react';
+import api from '../../services/api';
 
 const registrationQuotes = [
   "Every new patient is a new opportunity to make a difference.",
@@ -52,28 +53,9 @@ export function RegisterPatient() {
     setEmailCheckStatus('checking');
     
     try {
-      const token = localStorage.getItem('token');
-      const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001';
-      
-      const response = await fetch(`${API_BASE_URL}/api/auth/check-email`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`
-        },
-        body: JSON.stringify({ email })
-      });
-
-      if (response.ok) {
-        const data = await response.json();
-        setEmailCheckStatus(data.available ? 'available' : 'taken');
-      } else {
-        // Fallback to simple check if API is not available
-        const commonEmails = ['admin@hospital.com', 'test@test.com', 'user@example.com'];
-        const isTaken = commonEmails.includes(email.toLowerCase());
-        setEmailCheckStatus(isTaken ? 'taken' : 'available');
-      }
-    } catch (error) {
+      const response = await api.post('/auth/check-email', { email });
+      setEmailCheckStatus(response.data.available ? 'available' : 'taken');
+    } catch (error: any) {
       console.error('Email check error:', error);
       // Fallback to simple check on error
       const commonEmails = ['admin@hospital.com', 'test@test.com', 'user@example.com'];
